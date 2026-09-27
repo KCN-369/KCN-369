@@ -233,19 +233,31 @@ RESEARCH
 `JOURNEY STATUS :: IN PROGRESS`
 ```
 ---
+---
+
 ## ◈ CONNECT
 
-- [LinkedIn](https://www.linkedin.com/in/kanhu-nayak-369kcn)
-- [X](https://x.com/KCN3210)
-- [Hugging Face](https://huggingface.co/kcn-369)
-- [ORCID](https://orcid.org/0009-0004-9507-6794)
-- [Email](mailto:kcn3210@gmail.com)
+| NODE | LINK |
+|---|---|
+| `GITHUB` | [KCN-369](https://github.com/KCN-369) |
+| `LINKEDIN` | [KANHU-NAYAK](https://www.linkedin.com/in/kanhu-nayak-369kcn) |
+| `X` | [@KCN3210](https://x.com/KCN3210) |
+| `HUGGING FACE` | [KCN-369](https://huggingface.co/kcn-369) |
+| `ORCID` | [0009-0004-9507-6794](https://orcid.org/0009-0004-9507-6794) |
+| `EMAIL` | [KCN3210@gmail.com](mailto:kcn3210@gmail.com) |
 
-KCN_LAB
+`EXTERNAL NODES :: ONLINE`
 
-KEEP LEARNING · KEEP BUILDING · KEEP EXPLORING
+---
 
-Curiosity Today → Innovation Tomorrow
+<div align="center">
 
-</div> 
+### ◈ KCN_LAB ◈
 
+`SYSTEM STATUS :: ONLINE`
+
+`KEEP LEARNING · KEEP BUILDING · KEEP EXPLORING`
+
+**Curiosity Today → Innovation Tomorrow**
+
+</div>
