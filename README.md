@@ -132,6 +132,7 @@ EXPLORATION VECTOR :: PHYSICS → MATHEMATICS → PROGRAMMING → AI/ML → DEEP
 
 <div align="center">
 
+<a href="https://github.com/KCN-369"><img src="https://img.shields.io/badge/GitHub-0B1020?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 <a href="https://www.linkedin.com/in/kanhu-nayak-369kcn"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&labelColor=0B1020" alt="LinkedIn"/></a>
 <a href="https://x.com/KCN3210"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"/></a>
 <a href="https://huggingface.co/kcn-369"><img src="https://img.shields.io/badge/Hugging%20Face-0B1020?style=for-the-badge&logo=huggingface&logoColor=FFD21E" alt="Hugging Face"/></a>
@@ -139,6 +140,19 @@ EXPLORATION VECTOR :: PHYSICS → MATHEMATICS → PROGRAMMING → AI/ML → DEEP
 <a href="mailto:kcn3210@gmail.com"><img src="https://img.shields.io/badge/Email-0B1020?style=for-the-badge&logo=gmail&logoColor=FF2BD6" alt="Email"/></a>
 
 <br/><br/>
+
+| NODE | LINK |
+|:--|:--|
+| `GITHUB` | [KCN-369](https://github.com/KCN-369) |
+| `LINKEDIN` | [KANHU-NAYAK](https://www.linkedin.com/in/kanhu-nayak-369kcn) |
+| `X` | [@KCN3210](https://x.com/KCN3210) |
+| `HUGGING FACE` | [KCN-369](https://huggingface.co/kcn-369) |
+| `ORCID` | [0009-0004-9507-6794](https://orcid.org/0009-0004-9507-6794) |
+| `EMAIL` | [KCN3210@gmail.com](mailto:kcn3210@gmail.com) |
+
+`EXTERNAL NODES :: ONLINE`
+
+<br/>
 
 <img src="./assets/footer.svg" width="100%" alt="KEEP LEARNING · KEEP BUILDING · KEEP EXPLORING — Curiosity Today → Innovation Tomorrow"/>
 
