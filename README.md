@@ -20,6 +20,15 @@ Physics × AI/ML × Quantum Computing × Open Source
 > `1` ≈ Do whatever it takes to satisfy your curiosity !!
 
 ---
+## ◈ GITHUB CORE
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=KCN-369&show_icons=true&hide_border=true&theme=transparent&rank_icon=github" width="495" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KCN-369&layout=compact&hide_border=true&theme=transparent" width="340" />
+
+</div>
 
 ## ◈ SYSTEM STATUS
 
@@ -115,7 +124,7 @@ START
   └── KCN_LAB
         │
         └── EXPLORE → BUILD → EXPERIMENT → REPEAT
-
+```
 ## ◈ CONNECT
 
 - [LinkedIn](https://www.linkedin.com/in/kanhu-nayak-369kcn)
@@ -131,3 +140,4 @@ KEEP LEARNING · KEEP BUILDING · KEEP EXPLORING
 Curiosity Today → Innovation Tomorrow
 
 </div> ```
+
