@@ -121,5 +121,13 @@ START
 - [LinkedIn](https://www.linkedin.com/in/kanhu-nayak-369kcn)
 - [X](https://x.com/KCN3210)
 - [Hugging Face](https://huggingface.co/kcn-369)
-- [ORCID](https://orcid.org/)
+- [ORCID](https://orcid.org/0009-0004-9507-6794)
 - [Email](mailto:kcn3210@gmail.com)
+
+KCN_LAB
+
+KEEP LEARNING · KEEP BUILDING · KEEP EXPLORING
+
+Curiosity Today → Innovation Tomorrow
+
+</div> ```
