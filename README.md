@@ -1,12 +1,16 @@
 <div align="center">
 
-# KCN_LAB
+# ◈ KCN_LAB ◈
 
 ### KANHU_NAYAK
 
-**Undergraduate Student · Research Enthusiast**
+`UNDERGRADUATE STUDENT` · `RESEARCH ENTHUSIAST`
 
-Physics × AI/ML × Quantum Computing × Open Source
+**Physics × AI/ML × Quantum Computing × Open Source**
+
+---
+
+`SYSTEM INITIALIZED` · `KCN-369`
 
 </div>
 
@@ -20,84 +24,155 @@ Physics × AI/ML × Quantum Computing × Open Source
 > `1` ≈ Do whatever it takes to satisfy your curiosity !!
 
 ---
-## ◈ GITHUB CORE
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=KCN-369&show_icons=true&hide_border=true&theme=transparent&rank_icon=github" width="495" />
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KCN-369&layout=compact&hide_border=true&theme=transparent" width="340" />
-
-</div>
+---
 
 ## ◈ SYSTEM STATUS
 
-| Module | Status |
+| CORE | STATE |
 |---|---|
-| Physics | `ACTIVE` |
-| AI / ML | `LEARNING` |
-| Deep Learning | `LEARNING` |
-| Computer Vision | `EXPLORING` |
-| Quantum Computing | `EXPLORING` |
-| Scientific Computing | `LEARNING` |
-| Open Source | `BUILDING` |
-| Research | `ONGOING` |
+| `PHYSICS` | 🟢 `ACTIVE` |
+| `AI / ML` | 🔵 `LEARNING` |
+| `DEEP LEARNING` | 🔵 `LEARNING` |
+| `COMPUTER VISION` | 🟡 `EXPLORING` |
+| `QUANTUM COMPUTING` | 🟡 `EXPLORING` |
+| `SCIENTIFIC COMPUTING` | 🔵 `LEARNING` |
+| `OPEN SOURCE` | 🟠 `BUILDING` |
+| `RESEARCH` | 🟣 `ONGOING` |
 
+### SYSTEM MODE
+```text
+MODE      :: EXPLORATION
+CORE      :: PHYSICS × COMPUTATION
+PROCESS   :: LEARN → BUILD → EXPERIMENT
+STATUS    :: ONLINE
+```
+---
 ---
 
 ## ◈ TECH STACK
 
-### Languages
+### `LANGUAGES`
+
 `Python` · `C++` · `JavaScript` · `TypeScript`
 
-### ML / DL
+### `SCIENTIFIC / ML`
+
 `NumPy` · `Pandas` · `Matplotlib` · `Scikit-learn` · `PyTorch` · `TensorFlow`
 
-### Web / Tools
+### `WEB / ENGINEERING`
+
 `HTML` · `CSS` · `React` · `Next.js` · `Git` · `Linux` · `Docker` · `VS Code`
 
+### STACK STATUS
+
+```text
+PYTHON          ████████████████░░░░  LEARNING
+ML / DL         █████████████░░░░░░░  BUILDING
+WEB             ██████████░░░░░░░░░░  BUILDING
+LINUX           ███████████████░░░░░  ACTIVE
+RESEARCH        ███████░░░░░░░░░░░░░  ONGOING
+CV/QC_etc.      ███████░░░░░░░░░░░░░  ONGOING
+```
+---
 ---
 
 ## ◈ INTEREST MATRIX
 
-- Physics
-- Artificial Intelligence / Machine Learning
-- Deep Learning
-- Computer Vision
-- Quantum Computing
-- Scientific Computing
-- Robotics
-- Web Development
-- Open Source
-- Research
+| DOMAIN | STATE |
+|---|---|
+| `PHYSICS` | `ACTIVE` |
+| `ARTIFICIAL INTELLIGENCE` | `EXPLORING` |
+| `MACHINE LEARNING` | `BUILDING` |
+| `DEEP LEARNING` | `LEARNING` |
+| `COMPUTER VISION` | `EXPLORING` |
+| `QUANTUM COMPUTING` | `EXPLORING` |
+| `SCIENTIFIC COMPUTING` | `LEARNING` |
+| `ROBOTICS` | `EXPLORING` |
+| `WEB DEVELOPMENT` | `BUILDING` |
+| `OPEN SOURCE` | `BUILDING` |
+| `RESEARCH` | `ONGOING` |
 
+### EXPLORATION VECTOR
+
+```text
+PHYSICS
+   ↓
+MATHEMATICS
+   ↓
+PROGRAMMING
+   ↓
+AI / ML
+   ↓
+DEEP LEARNING
+   ↓
+SCIENTIFIC COMPUTING
+   ↓
+RESEARCH
+```
+---
 ---
 
-## ◈ PROJECTS
+## ◈ PROJECT DATABASE
 
-> `PROJECT DATABASE :: STANDBY`
-
-Projects will appear here as they become public.
-
+```text
+┌─────────────────────────────────────────────┐
+│ KCN_LAB :: PROJECT REGISTRY                │
+├─────────────────────────────────────────────┤
+│                                             │
+│  PUBLIC PROJECTS        :: STANDBY          │
+│  EXPERIMENTS            :: ACTIVE           │
+│  RESEARCH BUILDS        :: PRIVATE / WIP    │
+│  OPEN SOURCE BUILDS     :: STANDBY          │
+│                                             │
+└─────────────────────────────────────────────┘
+```
 ---
 
-## ◈ RESEARCH
+## ◈ RESEARCH CORE
 
-> `RESEARCH CORE :: ONGOING`
-
-Exploring ideas, learning fundamentals, and experimenting with new possibilities.
-
+```text
+┌─────────────────────────────────────────────┐
+│ KCN_LAB :: RESEARCH CORE                   │
+├─────────────────────────────────────────────┤
+│                                             │
+│  THEORY              :: EXPLORING           │
+│  EXPERIMENTATION     :: ONGOING             │
+│  MODEL DESIGN        :: EXPLORING           │
+│  SCIENTIFIC COMPUTE  :: LEARNING            │
+│  FUTURE DIRECTIONS   :: CLASSIFIED / WIP    │
+│                                             │
+└─────────────────────────────────────────────┘
+```
+---
 ---
 
 ## ◈ CURRENT FOCUS
 
-- Deep Learning
-- Computer Vision
-- Full Stack Development
-- Scientific Computing
-- Research Exploration
-- Open Source Contribution
-
+```text
+┌─────────────────────────────────────────────┐
+│ KCN_LAB :: ACTIVE PROTOCOL                 │
+├─────────────────────────────────────────────┤
+│                                             │
+│  [01] DEEP LEARNING                         │
+│       └─ Neural architectures & fundamentals│
+│                                             │
+│  [02] COMPUTER VISION                       │
+│       └─ Visual intelligence & perception   │
+│                                             │
+│  [03] FULL STACK DEVELOPMENT                │
+│       └─ Build → deploy → iterate           │
+│                                             │
+│  [04] SCIENTIFIC COMPUTING                  │
+│       └─ Physics × computation              │
+│                                             │
+│  [05] RESEARCH EXPLORATION                  │
+│       └─ Questions → experiments → evidence │
+│                                             │
+│  [06] OPEN SOURCE                           │
+│       └─ Learn → contribute → build         │
+│                                             │
+└─────────────────────────────────────────────┘
+```
 ---
 
 ## ◈ THINKING PROTOCOL
@@ -105,26 +180,59 @@ Exploring ideas, learning fundamentals, and experimenting with new possibilities
 > Thinking is difficult but systematic deep thinking for re-architecturing an existing system is rare.
 
 ---
+---
 
 ## ◈ JOURNEY
-
-```text
-START
-  │
-  ├── Physics
-  │
-  ├── Programming
-  │
-  ├── Machine Learning
-  │
-  ├── Deep Learning
-  │
-  ├── Research
-  │
-  └── KCN_LAB
-        │
-        └── EXPLORE → BUILD → EXPERIMENT → REPEAT
 ```
+
+                         KCN_LAB
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │    PHYSICS    │
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │ PROGRAMMING   │
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │  MACHINE      │
+                    │  LEARNING     │
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │ DEEP LEARNING │
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │   RESEARCH    │
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │   KCN_LAB     │
+                    └───────┬───────┘
+                            │
+              ┌─────────────┴─────────────┐
+              ▼                           ▼
+           EXPLORE                      BUILD
+              │                           │
+              └─────────────┬─────────────┘
+                            ▼
+                       EXPERIMENT
+                            │
+                            ▼
+                          REPEAT
+
+
+`JOURNEY STATUS :: IN PROGRESS`
+```
+---
 ## ◈ CONNECT
 
 - [LinkedIn](https://www.linkedin.com/in/kanhu-nayak-369kcn)
@@ -139,5 +247,5 @@ KEEP LEARNING · KEEP BUILDING · KEEP EXPLORING
 
 Curiosity Today → Innovation Tomorrow
 
-</div> ```
+</div> 
 
