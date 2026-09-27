@@ -115,3 +115,11 @@ START
   └── KCN_LAB
         │
         └── EXPLORE → BUILD → EXPERIMENT → REPEAT
+
+## ◈ CONNECT
+
+- [LinkedIn](https://www.linkedin.com/in/kanhu-nayak-369kcn)
+- [X](https://x.com/KCN3210)
+- [Hugging Face](https://huggingface.co/kcn-369)
+- [ORCID](https://orcid.org/)
+- [Email](mailto:kcn3210@gmail.com)
