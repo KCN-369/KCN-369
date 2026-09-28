@@ -38,6 +38,32 @@
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
+<!-- CONNECTIONS:START -->
+<div align="center">
+
+<sub><code>◈ WHO FOLLOWS KCN_LAB · CLICK AN AVATAR TO OPEN THAT GITHUB PROFILE</code></sub><br/><br/>
+
+<a href="https://github.com/lxlynx" title="lxlynx"><img src="https://avatars.githubusercontent.com/u/324573839?v=4" width="44" height="44" alt="lxlynx"/></a> <a href="https://github.com/Lxcardoza993" title="Lxcardoza993"><img src="https://avatars.githubusercontent.com/u/265670745?u=966e444a07c850f0a511606bbfe7797c46ab29a4&v=4" width="44" height="44" alt="Lxcardoza993"/></a> <a href="https://github.com/seckinyasar" title="seckinyasar"><img src="https://avatars.githubusercontent.com/u/86570205?u=32cc67695045a6c305f0c26aecf64a268eb48a64&v=4" width="44" height="44" alt="seckinyasar"/></a> <a href="https://github.com/helallao" title="helallao"><img src="https://avatars.githubusercontent.com/u/78656003?u=9c23d9553d718cf878b1543db64409aef98219d1&v=4" width="44" height="44" alt="helallao"/></a> <a href="https://github.com/alampolee" title="alampolee"><img src="https://avatars.githubusercontent.com/u/81109686?u=e962441ccd8c92921292f6a184301b6cbc16ec32&v=4" width="44" height="44" alt="alampolee"/></a> <a href="https://github.com/techno3455" title="techno3455"><img src="https://avatars.githubusercontent.com/u/72676508?v=4" width="44" height="44" alt="techno3455"/></a>
+
+<br/><br/>
+
+<details>
+<summary><b>▸ all 6 followers</b> <sub>— click to expand</sub></summary>
+
+<br/>
+
+[<img src="https://avatars.githubusercontent.com/u/324573839?v=4" width="26" height="26" alt="lxlynx"/>](https://github.com/lxlynx)&nbsp; <b>@lxlynx</b> · <sub>Alexander Cardoza</sub>  
+[<img src="https://avatars.githubusercontent.com/u/265670745?u=966e444a07c850f0a511606bbfe7797c46ab29a4&v=4" width="26" height="26" alt="Lxcardoza993"/>](https://github.com/Lxcardoza993)&nbsp; <b>@Lxcardoza993</b> · <sub>Lx 🎀</sub>  
+[<img src="https://avatars.githubusercontent.com/u/86570205?u=32cc67695045a6c305f0c26aecf64a268eb48a64&v=4" width="26" height="26" alt="seckinyasar"/>](https://github.com/seckinyasar)&nbsp; <b>@seckinyasar</b> · <sub>Seckin Yasar</sub>  
+[<img src="https://avatars.githubusercontent.com/u/78656003?u=9c23d9553d718cf878b1543db64409aef98219d1&v=4" width="26" height="26" alt="helallao"/>](https://github.com/helallao)&nbsp; <b>@helallao</b> · <sub>Ali Yaşar</sub>  
+[<img src="https://avatars.githubusercontent.com/u/81109686?u=e962441ccd8c92921292f6a184301b6cbc16ec32&v=4" width="26" height="26" alt="alampolee"/>](https://github.com/alampolee)&nbsp; <b>@alampolee</b> · <sub>Alan Paul</sub>  
+[<img src="https://avatars.githubusercontent.com/u/72676508?v=4" width="26" height="26" alt="techno3455"/>](https://github.com/techno3455)&nbsp; <b>@techno3455</b> · <sub>Trevor Blanchard</sub>
+
+</details>
+
+</div>
+<!-- CONNECTIONS:END -->
+
 <h2 align="center">◈ IDENTITY</h2>
 
 <div align="center">

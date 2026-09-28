@@ -55,7 +55,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets profile docs/data
+          git add README.md assets profile docs/data
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "chore(profile): refresh cards [skip ci]"
           git push
