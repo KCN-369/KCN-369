@@ -7,8 +7,8 @@
 <!-- THEME-SWITCHER:START -->
 <div align="center">
 <sub><code>◈ THEME SWITCHER — click a theme</code></sub><br/>
-<a href="https://github.com/KCN-369/KCN-369#readme"><img src="https://img.shields.io/badge/THEME%201-%E2%97%8F%20NEON%20LAB-00F0FF?style=for-the-badge&labelColor=0B1020" alt="Theme 1: Neon Lab"/></a>
-<a href="https://github.com/KCN-369/KCN-369/blob/main/themes/2/README.md"><img src="https://img.shields.io/badge/THEME%202-EMERALD%20MATRIX-6B8F7A?style=for-the-badge&labelColor=04120B" alt="Theme 2: Emerald Matrix"/></a>
+<a href="https://github.com/KCN-369/KCN-369#readme"><img src="https://img.shields.io/badge/THEME%201-NEON%20LAB-7D8590?style=for-the-badge&labelColor=0B1020" alt="Theme 1: Neon Lab"/></a>
+<a href="https://github.com/KCN-369/KCN-369/blob/main/themes/2/README.md"><img src="https://img.shields.io/badge/THEME%202-%E2%97%8F%20EMERALD%20MATRIX-00FF9C?style=for-the-badge&labelColor=04120B" alt="Theme 2: Emerald Matrix"/></a>
 </div>
 <!-- THEME-SWITCHER:END -->
 
@@ -17,15 +17,15 @@
 <img src="./assets/header.svg" width="100%" alt="KCN_LAB — Kanhu Nayak · Physics × AI/ML × Quantum Computing × Open Source"/>
 
 <a href="https://github.com/KCN-369">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=00F0FF&center=true&vCenter=true&width=720&lines=%3E+SYSTEM+INITIALIZED+%3A%3A+KCN-369;Physics+%C3%97+AI%2FML+%C3%97+Quantum+Computing;Curiosity+in+binary%3A+0+or+1+%E2%86%92+always+1;Learn+%E2%86%92+Build+%E2%86%92+Experiment+%E2%86%92+Repeat;Curiosity+Today+%E2%86%92+Innovation+Tomorrow" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=00FF9C&center=true&vCenter=true&width=720&lines=%3E+SYSTEM+INITIALIZED+%3A%3A+KCN-369;Physics+%C3%97+AI%2FML+%C3%97+Quantum+Computing;Curiosity+in+binary%3A+0+or+1+%E2%86%92+always+1;Learn+%E2%86%92+Build+%E2%86%92+Experiment+%E2%86%92+Repeat;Curiosity+Today+%E2%86%92+Innovation+Tomorrow" alt="Typing SVG"/>
 </a>
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=KCN-369&label=PROFILE%20VIEWS&color=8B5CF6&style=for-the-badge" alt="profile views"/>
-<a href="https://github.com/KCN-369?tab=followers"><img src="https://img.shields.io/github/followers/KCN-369?label=FOLLOWERS&style=for-the-badge&color=FF2BD6&labelColor=0B1020&logo=github&logoColor=white" alt="followers"/></a>
-<img src="https://img.shields.io/badge/STATUS-ONLINE-39FF88?style=for-the-badge&labelColor=0B1020" alt="status online"/>
-<img src="https://img.shields.io/badge/OPEN%20TO-COLLABORATE-00F0FF?style=for-the-badge&labelColor=0B1020" alt="open to collaborate"/>
+<img src="https://komarev.com/ghpvc/?username=KCN-369&label=PROFILE%20VIEWS&color=10B981&style=for-the-badge" alt="profile views"/>
+<a href="https://github.com/KCN-369?tab=followers"><img src="https://img.shields.io/github/followers/KCN-369?label=FOLLOWERS&style=for-the-badge&color=A3FF12&labelColor=04120B&logo=github&logoColor=white" alt="followers"/></a>
+<img src="https://img.shields.io/badge/STATUS-ONLINE-5EEAD4?style=for-the-badge&labelColor=04120B" alt="status online"/>
+<img src="https://img.shields.io/badge/OPEN%20TO-COLLABORATE-00FF9C?style=for-the-badge&labelColor=04120B" alt="open to collaborate"/>
 
 </div>
 
@@ -61,9 +61,9 @@
 <br/><br/><sub><code>SCIENTIFIC / ML</code></sub><br/><br/>
 <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,scikitlearn,opencv,anaconda&theme=dark" alt="PyTorch, TensorFlow, Scikit-learn, OpenCV, Anaconda"/>
 <br/>
-<img src="https://img.shields.io/badge/NumPy-0B1020?style=for-the-badge&logo=numpy&logoColor=00F0FF" alt="NumPy"/>
-<img src="https://img.shields.io/badge/Pandas-0B1020?style=for-the-badge&logo=pandas&logoColor=8B5CF6" alt="Pandas"/>
-<img src="https://img.shields.io/badge/Matplotlib-0B1020?style=for-the-badge&logoColor=FF2BD6" alt="Matplotlib"/>
+<img src="https://img.shields.io/badge/NumPy-04120B?style=for-the-badge&logo=numpy&logoColor=00FF9C" alt="NumPy"/>
+<img src="https://img.shields.io/badge/Pandas-04120B?style=for-the-badge&logo=pandas&logoColor=10B981" alt="Pandas"/>
+<img src="https://img.shields.io/badge/Matplotlib-04120B?style=for-the-badge&logoColor=A3FF12" alt="Matplotlib"/>
 
 <br/><br/><sub><code>WEB / ENGINEERING</code></sub><br/><br/>
 <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,git,linux,docker,vscode&theme=dark" alt="HTML, CSS, React, Next.js, Git, Linux, Docker, VS Code"/>
@@ -128,7 +128,7 @@ EXPLORATION VECTOR :: PHYSICS → MATHEMATICS → PROGRAMMING → AI/ML → DEEP
 <img src="./profile/stats.svg" width="49%" alt="GitHub stats"/>
 <img src="./profile/top-langs.svg" width="49%" alt="Top languages"/>
 
-<img src="https://streak-stats.demolab.com?user=KCN-369&hide_border=true&border_radius=12&background=0B1020&stroke=8B5CF6&ring=FF2BD6&fire=FF2BD6&currStreakNum=E6EDF3&sideNums=E6EDF3&currStreakLabel=00F0FF&sideLabels=00F0FF&dates=7D8590" width="98%" alt="GitHub streak"/>
+<img src="https://streak-stats.demolab.com?user=KCN-369&hide_border=true&border_radius=12&background=04120B&stroke=10B981&ring=A3FF12&fire=A3FF12&currStreakNum=E6F4EA&sideNums=E6F4EA&currStreakLabel=00FF9C&sideLabels=00FF9C&dates=6B8F7A" width="98%" alt="GitHub streak"/>
 
 <img src="./profile/snake.svg" width="98%" alt="Contribution snake"/>
 
@@ -140,12 +140,12 @@ EXPLORATION VECTOR :: PHYSICS → MATHEMATICS → PROGRAMMING → AI/ML → DEEP
 
 <div align="center">
 
-<a href="https://github.com/KCN-369"><img src="https://img.shields.io/badge/GitHub-0B1020?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-<a href="https://www.linkedin.com/in/kanhu-nayak-369kcn"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&labelColor=0B1020" alt="LinkedIn"/></a>
+<a href="https://github.com/KCN-369"><img src="https://img.shields.io/badge/GitHub-04120B?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+<a href="https://www.linkedin.com/in/kanhu-nayak-369kcn"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&labelColor=04120B" alt="LinkedIn"/></a>
 <a href="https://x.com/KCN3210"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"/></a>
-<a href="https://huggingface.co/kcn-369"><img src="https://img.shields.io/badge/Hugging%20Face-0B1020?style=for-the-badge&logo=huggingface&logoColor=FFD21E" alt="Hugging Face"/></a>
-<a href="https://orcid.org/0009-0004-9507-6794"><img src="https://img.shields.io/badge/ORCID-0B1020?style=for-the-badge&logo=orcid&logoColor=A6CE39" alt="ORCID"/></a>
-<a href="mailto:kcn3210@gmail.com"><img src="https://img.shields.io/badge/Email-0B1020?style=for-the-badge&logo=gmail&logoColor=FF2BD6" alt="Email"/></a>
+<a href="https://huggingface.co/kcn-369"><img src="https://img.shields.io/badge/Hugging%20Face-04120B?style=for-the-badge&logo=huggingface&logoColor=FFD21E" alt="Hugging Face"/></a>
+<a href="https://orcid.org/0009-0004-9507-6794"><img src="https://img.shields.io/badge/ORCID-04120B?style=for-the-badge&logo=orcid&logoColor=A6CE39" alt="ORCID"/></a>
+<a href="mailto:kcn3210@gmail.com"><img src="https://img.shields.io/badge/Email-04120B?style=for-the-badge&logo=gmail&logoColor=A3FF12" alt="Email"/></a>
 
 <br/><br/>
 

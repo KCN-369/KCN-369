@@ -1,0 +1,39 @@
+{
+  "_comment": "Theme 1 is the source design (README.md + assets/ + profile/). Every other theme is generated from it by remapping these colours. To add Theme N: copy a block, give it the next id, change the colours, run `python scripts/build_themes.py`.",
+  "base": {
+    "primary":   "00F0FF",
+    "secondary": "8B5CF6",
+    "accent":    "FF2BD6",
+    "success":   "39FF88",
+    "info":      "3B82F6",
+    "warning":   "FFB000",
+    "orange":    "FF8A3D",
+    "soft":      "CFE9FF",
+    "text":      "E6EDF3",
+    "muted":     "7D8590",
+    "bg":        "0B1020",
+    "panel":     "161D30",
+    "bg2":       "0A0E17",
+    "magenta":   "C026D3",
+    "teal":      "22D3EE",
+    "d1": "150A26", "d2": "111827", "d3": "0D1322", "d4": "0A0F1F",
+    "d5": "070B14", "d6": "070A12", "d7": "04060C", "d8": "1F2937",
+    "snake1": "3B1F5C", "snake2": "6D28D9"
+  },
+  "themes": [
+    { "id": 1, "name": "Neon Lab", "emoji": "🌌", "colors": {} },
+    {
+      "id": 2, "name": "Emerald Matrix", "emoji": "🟢",
+      "colors": {
+        "primary": "00FF9C", "secondary": "10B981", "accent": "A3FF12",
+        "success": "5EEAD4", "info": "22C55E", "warning": "FACC15",
+        "orange": "F59E0B", "soft": "D1FAE5", "text": "E6F4EA",
+        "muted": "6B8F7A", "bg": "04120B", "panel": "0C2418", "bg2": "030B07",
+        "magenta": "65A30D", "teal": "34D399",
+        "d1": "06170E", "d2": "0A1A12", "d3": "061810", "d4": "04140C",
+        "d5": "020D07", "d6": "020A06", "d7": "010502", "d8": "14352A",
+        "snake1": "0E4429", "snake2": "006D32"
+      }
+    }
+  ]
+}
