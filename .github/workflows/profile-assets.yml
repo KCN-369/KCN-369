@@ -1,24 +1,29 @@
 name: profile-assets
 
-# Regenerates the dynamic cards shown in README.md:
-#   profile/stats.svg      -> GitHub stats card
-#   profile/top-langs.svg  -> top languages card
-#   profile/snake.svg      -> contribution-graph snake animation
-# Everything is committed back to this repository, so the README never
-# depends on a third-party stats server being online.
+# Regenerates every dynamic card shown in README.md from REAL GitHub data:
+#   profile/stats.svg       GitHub telemetry (tiles, LEVEL ring, XP, stats)
+#   profile/top-langs.svg   top languages card
+#   profile/contrib3d.svg   3D isometric contribution graph (hover to rotate)
+#   profile/flow.svg        animated weekly-waveform + day-matrix graph
+#   docs/data/contrib.json  payload for the interactive 3D viewer (GitHub Pages)
+# Static artwork in assets/ is rebuilt by scripts/build_assets.py.
+#
+# Optional: add a classic Personal Access Token as the repo secret PROFILE_TOKEN
+# (scope: read:user) to include private contributions in the numbers.
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # every 12 hours
+    - cron: "0 */6 * * *" # every 6 hours
   workflow_dispatch:
   push:
     branches: [main]
     paths:
       - ".github/workflows/profile-assets.yml"
       - "README.md"
+      - "scripts/**"
       - "assets/**"
-      - "themes/palettes.json"
-      - "scripts/build_themes.py"
+      - "profile/**"
+      - "docs/data/**"
 
 permissions:
   contents: write
@@ -33,37 +38,24 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Stats card
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0B1020&title_color=00F0FF&icon_color=FF2BD6&text_color=E6EDF3&ring_color=8B5CF6&border_radius=12
-          path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build static artwork
+        run: python3 scripts/build_assets.py
 
-      - name: Top languages card
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&bg_color=0B1020&title_color=00F0FF&text_color=E6EDF3&border_radius=12&card_width=495
-          path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Contribution snake
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            profile/snake.svg?palette=github-dark&color_snake=#00F0FF&color_dots=#161B22,#3B1F5C,#6D28D9,#C026D3,#FF2BD6
-
-      - name: Build themes (Theme 2, 3, ... from palettes.json)
-        run: python3 scripts/build_themes.py
+      - name: Generate live cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/profile_cards.py \
+            --user "${{ github.repository_owner }}" \
+            --out profile \
+            --data-out docs/data \
+          || echo "::warning::card generation failed — keeping the previous cards"
 
       - name: Commit updated cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/*.svg README.md themes
+          git add assets profile docs/data
           git diff --cached --quiet && echo "No changes" && exit 0
-          git commit -m "chore(profile): refresh README cards [skip ci]"
+          git commit -m "chore(profile): refresh cards [skip ci]"
           git push

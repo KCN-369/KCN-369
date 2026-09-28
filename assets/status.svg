@@ -1,26 +1,168 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" width="1000" height="330" role="img" aria-label="System status and stack status dashboard">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" aria-label="System status: physics active; AI/ML, deep learning and scientific computing learning; computer vision and quantum computing exploring; open source building; research ongoing">
 <title>KCN_LAB :: SYSTEM STATUS</title>
 <style>
   text { font-family: 'JetBrains Mono','Fira Code','SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace; }
-  .row { animation: row .6s cubic-bezier(.2,.8,.2,1) both; }
-  @keyframes row { from { opacity: 0; transform: translateX(-16px) } to { opacity: 1; transform: none } }
-  .ring { animation: ring 1.8s ease-out infinite; transform-box: fill-box; transform-origin: center; }
-  @keyframes ring { 0% { transform: scale(.6); opacity: .9 } 100% { transform: scale(2.1); opacity: 0 } }
-  .hl { animation: hl 7.2s ease-in-out infinite; }
-  @keyframes hl { 0%,100% { fill-opacity: 0 } 6% { fill-opacity: .10 } 14% { fill-opacity: 0 } }
-  .bar { animation: bar 9s cubic-bezier(.3,.9,.3,1) infinite; transform-box: fill-box; transform-origin: left center; }
-  @keyframes bar { 0% { transform: scaleX(0) } 18%,92% { transform: scaleX(1) } 100% { transform: scaleX(0) } }
-  .shine { animation: shine 3s ease-in-out infinite; }
-  @keyframes shine { 0% { transform: translateX(0) } 60%,100% { transform: translateX(280px) } }
-  .blink { animation: blink 1s steps(1) infinite; }
+  .spin { animation: spin 18s linear infinite; transform-box: fill-box; transform-origin: center; }
+  .spin-s { animation: spin 9s linear infinite reverse; transform-box: fill-box; transform-origin: center; }
+  @keyframes spin { to { transform: rotate(360deg) } }
+  .blink { animation: blink 1.05s steps(1) infinite; }
   @keyframes blink { 50% { opacity: 0 } }
+  .pulse { animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity: .35 } 50% { opacity: 1 } }
+  .rise { animation: rise .8s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(12px) } to { opacity: 1; transform: none } }
+  .sweep { animation: sweep 5s cubic-bezier(.4,0,.6,1) infinite; }
+  @keyframes sweep { 0% { transform: translateX(-260px) } 55%,100% { transform: translateX(1100px) } }
+
+  .ring { animation: ring 2s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+  @keyframes ring { 0% { transform: scale(.6); opacity: .9 } 100% { transform: scale(2.2); opacity: 0 } }
+  .bar { animation: bar 1.6s cubic-bezier(.3,.9,.3,1) both; transform-box: fill-box; transform-origin: left center; }
+  @keyframes bar { from { transform: scaleX(0) } }
 </style>
 <defs>
-  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00F0FF"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#FF2BD6"/></linearGradient>
-  <linearGradient id="shine" x1="0" x2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".55"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
-  <filter id="glow" x="-10%" y="-80%" width="120%" height="260%"><feGaussianBlur stdDeviation="3"/></filter>
-  <linearGradient id="g0" x1="0" x2="1"><stop offset="0" stop-color="#00F0FF" stop-opacity=".45"/><stop offset="1" stop-color="#00F0FF"/></linearGradient><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#8B5CF6" stop-opacity=".45"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#3B82F6" stop-opacity=".45"/><stop offset="1" stop-color="#3B82F6"/></linearGradient><linearGradient id="g3" x1="0" x2="1"><stop offset="0" stop-color="#39FF88" stop-opacity=".45"/><stop offset="1" stop-color="#39FF88"/></linearGradient><linearGradient id="g4" x1="0" x2="1"><stop offset="0" stop-color="#FF2BD6" stop-opacity=".45"/><stop offset="1" stop-color="#FF2BD6"/></linearGradient><linearGradient id="g5" x1="0" x2="1"><stop offset="0" stop-color="#FFB000" stop-opacity=".45"/><stop offset="1" stop-color="#FFB000"/></linearGradient>
+  <linearGradient id="holo" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#22D3EE"/><stop offset=".38" stop-color="#60A5FA"/>
+    <stop offset=".68" stop-color="#A78BFA"/><stop offset="1" stop-color="#F472B6"/></linearGradient>
+  <linearGradient id="holoV" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#A78BFA"/><stop offset=".55" stop-color="#60A5FA"/>
+    <stop offset="1" stop-color="#22D3EE"/></linearGradient>
+  <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F8FE"/></linearGradient>
+  <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".85"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" fill="none" stroke="#0E7490" stroke-opacity=".07"/></pattern>
+  <radialGradient id="gc"><stop offset="0" stop-color="#22D3EE" stop-opacity=".22"/>
+    <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gv"><stop offset="0" stop-color="#A78BFA" stop-opacity=".20"/>
+    <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></radialGradient>
+  <radialGradient id="gm"><stop offset="0" stop-color="#F472B6" stop-opacity=".18"/>
+    <stop offset="1" stop-color="#F472B6" stop-opacity="0"/></radialGradient>
+  <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="2.2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="7"/></filter>
 </defs>
-<rect x="0.75" y="0.75" width="486.5" height="328.5" rx="14" fill="#0B1020" stroke="url(#edge)" stroke-opacity=".55" stroke-width="1.5"/><text x="24" y="36" font-size="15" font-weight="700" fill="#E6EDF3" letter-spacing="2"><tspan fill="#00F0FF">◆</tspan> SYSTEM STATUS</text><text x="464" y="36" font-size="11" fill="#7D8590" text-anchor="end" letter-spacing="1">CORE MODULES · 08</text><line x1="24" y1="50" x2="464" y2="50" stroke="#00F0FF" stroke-opacity=".18"/><g class="row" style="animation-delay:0.00s"><rect x="16" y="62" width="456" height="28" rx="6" fill="#39FF88" fill-opacity=".0" class="hl" style="animation-delay:0.0s"/><text x="28" y="82" font-size="13.5" fill="#E6EDF3" letter-spacing=".5">PHYSICS</text><line x1="240" y1="78" x2="318" y2="78" stroke="#7D8590" stroke-opacity=".35" stroke-dasharray="2 4"/><rect x="330" y="66" width="130" height="22" rx="11" fill="#39FF88" fill-opacity=".1" stroke="#39FF88" stroke-opacity=".55"/><circle cx="345" cy="77" r="7" fill="#39FF88" fill-opacity=".25" class="ring" style="animation-delay:0.00s"/><circle cx="345" cy="77" r="3.6" fill="#39FF88"/><text x="402" y="82" font-size="12" fill="#39FF88" text-anchor="middle" letter-spacing="1.5">ACTIVE</text></g><g class="row" style="animation-delay:0.25s"><rect x="16" y="93" width="456" height="28" rx="6" fill="#3B82F6" fill-opacity=".0" class="hl" style="animation-delay:0.9s"/><text x="28" y="113" font-size="13.5" fill="#E6EDF3" letter-spacing=".5">AI / ML</text><line x1="240" y1="109" x2="318" y2="109" stroke="#7D8590" stroke-opacity=".35" stroke-dasharray="2 4"/><rect x="330" y="97" width="130" height="22" rx="11" fill="#3B82F6" fill-opacity=".1" stroke="#3B82F6" stroke-opacity=".55"/><circle cx="345" cy="108" r="7" fill="#3B82F6" fill-opacity=".25" class="ring" style="animation-delay:0.25s"/><circle cx="345" cy="108" r="3.6" fill="#3B82F6"/><text x="402" y="113" font-size="12" fill="#3B82F6" text-anchor="middle" letter-spacing="1.5">LEARNING</text></g><g class="row" style="animation-delay:0.50s"><rect x="16" y="124" width="456" height="28" rx="6" fill="#3B82F6" fill-opacity=".0" class="hl" style="animation-delay:1.8s"/><text x="28" y="144" font-size="13.5" fill="#E6EDF3" letter-spacing=".5">DEEP LEARNING</text><line x1="240" y1="140" x2="318" y2="140" stroke="#7D8590" stroke-opacity=".35" stroke-dasharray="2 4"/><rect x="330" y="128" width="130" height="22" rx="11" fill="#3B82F6" fill-opacity=".1" stroke="#3B82F6" stroke-opacity=".55"/><circle cx="345" cy="139" r="7" fill="#3B82F6" fill-opacity=".25" class="ring" style="animation-delay:0.50s"/><circle cx="345" cy="139" r="3.6" fill="#3B82F6"/><text x="402" y="144" font-size="12" fill="#3B82F6" text-anchor="middle" letter-spacing="1.5">LEARNING</text></g><g class="row" style="animation-delay:0.75s"><rect x="16" y="155" width="456" height="28" rx="6" fill="#FFB000" fill-opacity=".0" class="hl" style="animation-delay:2.7s"/><text x="28" y="175" font-size="13.5" fill="#E6EDF3" letter-spacing=".5">COMPUTER VISION</text><line x1="240" y1="171" x2="318" y2="171" stroke="#7D8590" stroke-opacity=".35" stroke-dasharray="2 4"/><rect x="330" y="159" width="130" height="22" rx="11" fill="#FFB000" fill-opacity=".1" stroke="#FFB000" stroke-opacity=".55"/><circle cx="345" cy="170" r="7" fill="#FFB000" fill-opacity=".25" class="ring" style="animation-delay:0.75s"/><circle cx="345" cy="170" r="3.6" fill="#FFB000"/><text x="402" y="175" font-size="12" fill="#FFB000" text-anchor="middle" letter-spacing="1.5">EXPLORING</text></g><g class="row" style="animation-delay:1.00s"><rect x="16" y="186" width="456" height="28" rx="6" fill="#FFB000" fill-opacity=".0" class="hl" style="animation-delay:3.6s"/><text x="28" y="206" font-size="13.5" fill="#E6EDF3" letter-spacing=".5">QUANTUM COMPUTING</text><line x1="240" y1="202" x2="318" y2="202" stroke="#7D8590" stroke-opacity=".35" stroke-dasharray="2 4"/><rect x="330" y="190" width="130" height="22" rx="11" fill="#FFB000" fill-opacity=".1" stroke="#FFB000" stroke-opacity=".55"/><circle cx="345" cy="201" r="7" fill="#FFB000" fill-opacity=".25" class="ring" style="animation-delay:1.00s"/><circle cx="345" cy="201" r="3.6" fill="#FFB000"/><text x="402" y="206" font-size="12" fill="#FFB000" text-anchor="middle" letter-spacing="1.5">EXPLORING</text></g><g class="row" style="animation-delay:1.25s"><rect x="16" y="217" width="456" height="28" rx="6" fill="#3B82F6" fill-opacity=".0" class="hl" style="animation-delay:4.5s"/><text x="28" y="237" font-size="13.5" fill="#E6EDF3" letter-spacing=".5">SCIENTIFIC COMPUTING</text><line x1="240" y1="233" x2="318" y2="233" stroke="#7D8590" stroke-opacity=".35" stroke-dasharray="2 4"/><rect x="330" y="221" width="130" height="22" rx="11" fill="#3B82F6" fill-opacity=".1" stroke="#3B82F6" stroke-opacity=".55"/><circle cx="345" cy="232" r="7" fill="#3B82F6" fill-opacity=".25" class="ring" style="animation-delay:1.25s"/><circle cx="345" cy="232" r="3.6" fill="#3B82F6"/><text x="402" y="237" font-size="12" fill="#3B82F6" text-anchor="middle" letter-spacing="1.5">LEARNING</text></g><g class="row" style="animation-delay:1.50s"><rect x="16" y="248" width="456" height="28" rx="6" fill="#FF8A3D" fill-opacity=".0" class="hl" style="animation-delay:5.4s"/><text x="28" y="268" font-size="13.5" fill="#E6EDF3" letter-spacing=".5">OPEN SOURCE</text><line x1="240" y1="264" x2="318" y2="264" stroke="#7D8590" stroke-opacity=".35" stroke-dasharray="2 4"/><rect x="330" y="252" width="130" height="22" rx="11" fill="#FF8A3D" fill-opacity=".1" stroke="#FF8A3D" stroke-opacity=".55"/><circle cx="345" cy="263" r="7" fill="#FF8A3D" fill-opacity=".25" class="ring" style="animation-delay:1.50s"/><circle cx="345" cy="263" r="3.6" fill="#FF8A3D"/><text x="402" y="268" font-size="12" fill="#FF8A3D" text-anchor="middle" letter-spacing="1.5">BUILDING</text></g><g class="row" style="animation-delay:1.75s"><rect x="16" y="279" width="456" height="28" rx="6" fill="#8B5CF6" fill-opacity=".0" class="hl" style="animation-delay:6.3s"/><text x="28" y="299" font-size="13.5" fill="#E6EDF3" letter-spacing=".5">RESEARCH</text><line x1="240" y1="295" x2="318" y2="295" stroke="#7D8590" stroke-opacity=".35" stroke-dasharray="2 4"/><rect x="330" y="283" width="130" height="22" rx="11" fill="#8B5CF6" fill-opacity=".1" stroke="#8B5CF6" stroke-opacity=".55"/><circle cx="345" cy="294" r="7" fill="#8B5CF6" fill-opacity=".25" class="ring" style="animation-delay:1.75s"/><circle cx="345" cy="294" r="3.6" fill="#8B5CF6"/><text x="402" y="299" font-size="12" fill="#8B5CF6" text-anchor="middle" letter-spacing="1.5">ONGOING</text></g>
-<rect x="508.75" y="0.75" width="490.5" height="328.5" rx="14" fill="#0B1020" stroke="url(#edge)" stroke-opacity=".55" stroke-width="1.5"/><text x="532" y="36" font-size="15" font-weight="700" fill="#E6EDF3" letter-spacing="2"><tspan fill="#FF2BD6">◆</tspan> STACK STATUS</text><text x="976" y="36" font-size="11" fill="#7D8590" text-anchor="end" letter-spacing="1">LOAD · SYNCING<tspan class="blink">_</tspan></text><line x1="532" y1="50" x2="976" y2="50" stroke="#FF2BD6" stroke-opacity=".18"/><text x="532" y="93" font-size="13" fill="#E6EDF3" letter-spacing=".5">PYTHON</text><rect x="626" y="82" width="205" height="14" rx="7" fill="#161D30"/><g class="bar" style="animation-delay:0.30s"><rect x="626" y="82" width="164.0" height="14" rx="7" fill="url(#g0)"/><rect x="626" y="82" width="164.0" height="14" rx="7" fill="url(#g0)" filter="url(#glow)" opacity=".5"/></g><g clip-path="url(#cb0)"><rect x="566" y="82" width="50" height="14" fill="url(#shine)" class="shine" style="animation-delay:1.80s"/></g><clipPath id="cb0"><rect x="626" y="82" width="164.0" height="14" rx="7"/></clipPath><text x="845" y="93" font-size="12" fill="#00F0FF" letter-spacing="1">80%</text><text x="976" y="93" font-size="10.5" fill="#7D8590" text-anchor="end" letter-spacing="1">LEARNING</text><text x="532" y="133" font-size="13" fill="#E6EDF3" letter-spacing=".5">ML / DL</text><rect x="626" y="122" width="205" height="14" rx="7" fill="#161D30"/><g class="bar" style="animation-delay:0.52s"><rect x="626" y="122" width="133.2" height="14" rx="7" fill="url(#g1)"/><rect x="626" y="122" width="133.2" height="14" rx="7" fill="url(#g1)" filter="url(#glow)" opacity=".5"/></g><g clip-path="url(#cb1)"><rect x="566" y="122" width="50" height="14" fill="url(#shine)" class="shine" style="animation-delay:2.15s"/></g><clipPath id="cb1"><rect x="626" y="122" width="133.2" height="14" rx="7"/></clipPath><text x="845" y="133" font-size="12" fill="#8B5CF6" letter-spacing="1">65%</text><text x="976" y="133" font-size="10.5" fill="#7D8590" text-anchor="end" letter-spacing="1">BUILDING</text><text x="532" y="173" font-size="13" fill="#E6EDF3" letter-spacing=".5">WEB</text><rect x="626" y="162" width="205" height="14" rx="7" fill="#161D30"/><g class="bar" style="animation-delay:0.74s"><rect x="626" y="162" width="102.5" height="14" rx="7" fill="url(#g2)"/><rect x="626" y="162" width="102.5" height="14" rx="7" fill="url(#g2)" filter="url(#glow)" opacity=".5"/></g><g clip-path="url(#cb2)"><rect x="566" y="162" width="50" height="14" fill="url(#shine)" class="shine" style="animation-delay:2.50s"/></g><clipPath id="cb2"><rect x="626" y="162" width="102.5" height="14" rx="7"/></clipPath><text x="845" y="173" font-size="12" fill="#3B82F6" letter-spacing="1">50%</text><text x="976" y="173" font-size="10.5" fill="#7D8590" text-anchor="end" letter-spacing="1">BUILDING</text><text x="532" y="213" font-size="13" fill="#E6EDF3" letter-spacing=".5">LINUX</text><rect x="626" y="202" width="205" height="14" rx="7" fill="#161D30"/><g class="bar" style="animation-delay:0.96s"><rect x="626" y="202" width="153.8" height="14" rx="7" fill="url(#g3)"/><rect x="626" y="202" width="153.8" height="14" rx="7" fill="url(#g3)" filter="url(#glow)" opacity=".5"/></g><g clip-path="url(#cb3)"><rect x="566" y="202" width="50" height="14" fill="url(#shine)" class="shine" style="animation-delay:2.85s"/></g><clipPath id="cb3"><rect x="626" y="202" width="153.8" height="14" rx="7"/></clipPath><text x="845" y="213" font-size="12" fill="#39FF88" letter-spacing="1">75%</text><text x="976" y="213" font-size="10.5" fill="#7D8590" text-anchor="end" letter-spacing="1">ACTIVE</text><text x="532" y="253" font-size="13" fill="#E6EDF3" letter-spacing=".5">RESEARCH</text><rect x="626" y="242" width="205" height="14" rx="7" fill="#161D30"/><g class="bar" style="animation-delay:1.18s"><rect x="626" y="242" width="71.8" height="14" rx="7" fill="url(#g4)"/><rect x="626" y="242" width="71.8" height="14" rx="7" fill="url(#g4)" filter="url(#glow)" opacity=".5"/></g><g clip-path="url(#cb4)"><rect x="566" y="242" width="50" height="14" fill="url(#shine)" class="shine" style="animation-delay:3.20s"/></g><clipPath id="cb4"><rect x="626" y="242" width="71.8" height="14" rx="7"/></clipPath><text x="845" y="253" font-size="12" fill="#FF2BD6" letter-spacing="1">35%</text><text x="976" y="253" font-size="10.5" fill="#7D8590" text-anchor="end" letter-spacing="1">ONGOING</text><text x="532" y="293" font-size="13" fill="#E6EDF3" letter-spacing=".5">CV / QC</text><rect x="626" y="282" width="205" height="14" rx="7" fill="#161D30"/><g class="bar" style="animation-delay:1.40s"><rect x="626" y="282" width="71.8" height="14" rx="7" fill="url(#g5)"/><rect x="626" y="282" width="71.8" height="14" rx="7" fill="url(#g5)" filter="url(#glow)" opacity=".5"/></g><g clip-path="url(#cb5)"><rect x="566" y="282" width="50" height="14" fill="url(#shine)" class="shine" style="animation-delay:3.55s"/></g><clipPath id="cb5"><rect x="626" y="282" width="71.8" height="14" rx="7"/></clipPath><text x="845" y="293" font-size="12" fill="#FFB000" letter-spacing="1">35%</text><text x="976" y="293" font-size="10.5" fill="#7D8590" text-anchor="end" letter-spacing="1">ONGOING</text>
+<rect x="0" y="0" width="1000" height="340" rx="18" fill="url(#paper)"/><rect x="0" y="0" width="1000" height="4" rx="2" fill="url(#holo)"/><rect x=".75" y=".75" width="998.5" height="338.5" rx="17" fill="none" stroke="#D8E4F4" stroke-width="1.5"/>
+<circle cx="618.0" cy="242.5" r="0.6" fill="#A5F3FC" class="tw" style="animation-delay:-3.88s;animation-duration:3.30s"/><circle cx="69.8" cy="67.1" r="1.0" fill="#A5F3FC" class="tw" style="animation-delay:-4.34s;animation-duration:3.67s"/><circle cx="117.9" cy="94.8" r="0.8" fill="#A5F3FC" class="tw" style="animation-delay:-1.40s;animation-duration:5.17s"/><circle cx="755.1" cy="67.9" r="0.6" fill="#C4B5FD" class="tw" style="animation-delay:-3.09s;animation-duration:3.85s"/><circle cx="147.0" cy="311.7" r="0.6" fill="#C4B5FD" class="tw" style="animation-delay:-3.87s;animation-duration:5.29s"/><circle cx="179.2" cy="69.9" r="1.0" fill="#C4B5FD" class="tw" style="animation-delay:-2.70s;animation-duration:4.50s"/><circle cx="216.6" cy="302.3" r="0.8" fill="#A5F3FC" class="tw" style="animation-delay:-1.49s;animation-duration:3.61s"/><circle cx="179.3" cy="63.7" r="0.6" fill="#F9A8D4" class="tw" style="animation-delay:-1.51s;animation-duration:4.29s"/><circle cx="23.2" cy="223.4" r="1.0" fill="#93C5FD" class="tw" style="animation-delay:-1.55s;animation-duration:4.89s"/><circle cx="481.5" cy="114.7" r="1.1" fill="#A5F3FC" class="tw" style="animation-delay:-3.52s;animation-duration:2.76s"/><circle cx="956.1" cy="26.9" r="1.0" fill="#A5F3FC" class="tw" style="animation-delay:-0.09s;animation-duration:4.81s"/><circle cx="371.5" cy="193.6" r="0.6" fill="#A5F3FC" class="tw" style="animation-delay:-0.23s;animation-duration:3.11s"/>
+<rect x="16" y="16" width="486" height="308" rx="14" fill="#FFFFFF" stroke="#D8E4F4"/>
+<text x="40" y="50" font-size="14.5" font-weight="700" fill="#0B1220" letter-spacing="2"><tspan fill="#0E7490">◆</tspan> SYSTEM STATUS</text>
+<text x="478" y="50" font-size="10.5" fill="#7C8CA6" text-anchor="end" letter-spacing="1.4">CORE MODULES · 08</text>
+<line x1="40" y1="62" x2="478" y2="62" stroke="#D8E4F4"/>
+<g class="rise" style="animation-delay:0.00s">
+<rect x="28" y="68" width="462" height="30" rx="8" fill="#047857" fill-opacity=".05"/>
+<rect x="28" y="68" width="3" height="30" rx="1.5" fill="#047857"/>
+<text x="44" y="88" font-size="13" fill="#3D4B63" letter-spacing=".6">PHYSICS</text>
+<rect x="330" y="73" width="146" height="22" rx="11" fill="#047857" fill-opacity=".1" stroke="#047857" stroke-opacity=".5"/>
+<circle cx="346" cy="84" r="6" fill="#047857" fill-opacity=".3" class="ring"/>
+<circle cx="346" cy="84" r="3.2" fill="#047857"/>
+<text x="404" y="88" font-size="11" fill="#047857" text-anchor="middle" letter-spacing="1.5">ACTIVE</text>
+</g>
+<g class="rise" style="animation-delay:0.09s">
+<rect x="28" y="98" width="462" height="30" rx="8" fill="#2563EB" fill-opacity=".05"/>
+<rect x="28" y="98" width="3" height="30" rx="1.5" fill="#2563EB"/>
+<text x="44" y="118" font-size="13" fill="#3D4B63" letter-spacing=".6">AI / ML</text>
+<rect x="330" y="103" width="146" height="22" rx="11" fill="#2563EB" fill-opacity=".1" stroke="#2563EB" stroke-opacity=".5"/>
+<circle cx="346" cy="114" r="6" fill="#2563EB" fill-opacity=".3" class="ring"/>
+<circle cx="346" cy="114" r="3.2" fill="#2563EB"/>
+<text x="404" y="118" font-size="11" fill="#2563EB" text-anchor="middle" letter-spacing="1.5">LEARNING</text>
+</g>
+<g class="rise" style="animation-delay:0.18s">
+<rect x="28" y="128" width="462" height="30" rx="8" fill="#2563EB" fill-opacity=".05"/>
+<rect x="28" y="128" width="3" height="30" rx="1.5" fill="#2563EB"/>
+<text x="44" y="148" font-size="13" fill="#3D4B63" letter-spacing=".6">DEEP LEARNING</text>
+<rect x="330" y="133" width="146" height="22" rx="11" fill="#2563EB" fill-opacity=".1" stroke="#2563EB" stroke-opacity=".5"/>
+<circle cx="346" cy="144" r="6" fill="#2563EB" fill-opacity=".3" class="ring"/>
+<circle cx="346" cy="144" r="3.2" fill="#2563EB"/>
+<text x="404" y="148" font-size="11" fill="#2563EB" text-anchor="middle" letter-spacing="1.5">LEARNING</text>
+</g>
+<g class="rise" style="animation-delay:0.27s">
+<rect x="28" y="158" width="462" height="30" rx="8" fill="#B45309" fill-opacity=".05"/>
+<rect x="28" y="158" width="3" height="30" rx="1.5" fill="#B45309"/>
+<text x="44" y="178" font-size="13" fill="#3D4B63" letter-spacing=".6">COMPUTER VISION</text>
+<rect x="330" y="163" width="146" height="22" rx="11" fill="#B45309" fill-opacity=".1" stroke="#B45309" stroke-opacity=".5"/>
+<circle cx="346" cy="174" r="6" fill="#B45309" fill-opacity=".3" class="ring"/>
+<circle cx="346" cy="174" r="3.2" fill="#B45309"/>
+<text x="404" y="178" font-size="11" fill="#B45309" text-anchor="middle" letter-spacing="1.5">EXPLORING</text>
+</g>
+<g class="rise" style="animation-delay:0.36s">
+<rect x="28" y="188" width="462" height="30" rx="8" fill="#B45309" fill-opacity=".05"/>
+<rect x="28" y="188" width="3" height="30" rx="1.5" fill="#B45309"/>
+<text x="44" y="208" font-size="13" fill="#3D4B63" letter-spacing=".6">QUANTUM COMPUTING</text>
+<rect x="330" y="193" width="146" height="22" rx="11" fill="#B45309" fill-opacity=".1" stroke="#B45309" stroke-opacity=".5"/>
+<circle cx="346" cy="204" r="6" fill="#B45309" fill-opacity=".3" class="ring"/>
+<circle cx="346" cy="204" r="3.2" fill="#B45309"/>
+<text x="404" y="208" font-size="11" fill="#B45309" text-anchor="middle" letter-spacing="1.5">EXPLORING</text>
+</g>
+<g class="rise" style="animation-delay:0.45s">
+<rect x="28" y="218" width="462" height="30" rx="8" fill="#2563EB" fill-opacity=".05"/>
+<rect x="28" y="218" width="3" height="30" rx="1.5" fill="#2563EB"/>
+<text x="44" y="238" font-size="13" fill="#3D4B63" letter-spacing=".6">SCIENTIFIC COMPUTING</text>
+<rect x="330" y="223" width="146" height="22" rx="11" fill="#2563EB" fill-opacity=".1" stroke="#2563EB" stroke-opacity=".5"/>
+<circle cx="346" cy="234" r="6" fill="#2563EB" fill-opacity=".3" class="ring"/>
+<circle cx="346" cy="234" r="3.2" fill="#2563EB"/>
+<text x="404" y="238" font-size="11" fill="#2563EB" text-anchor="middle" letter-spacing="1.5">LEARNING</text>
+</g>
+<g class="rise" style="animation-delay:0.54s">
+<rect x="28" y="248" width="462" height="30" rx="8" fill="#EA580C" fill-opacity=".05"/>
+<rect x="28" y="248" width="3" height="30" rx="1.5" fill="#EA580C"/>
+<text x="44" y="268" font-size="13" fill="#3D4B63" letter-spacing=".6">OPEN SOURCE</text>
+<rect x="330" y="253" width="146" height="22" rx="11" fill="#EA580C" fill-opacity=".1" stroke="#EA580C" stroke-opacity=".5"/>
+<circle cx="346" cy="264" r="6" fill="#EA580C" fill-opacity=".3" class="ring"/>
+<circle cx="346" cy="264" r="3.2" fill="#EA580C"/>
+<text x="404" y="268" font-size="11" fill="#EA580C" text-anchor="middle" letter-spacing="1.5">BUILDING</text>
+</g>
+<g class="rise" style="animation-delay:0.63s">
+<rect x="28" y="278" width="462" height="30" rx="8" fill="#7C3AED" fill-opacity=".05"/>
+<rect x="28" y="278" width="3" height="30" rx="1.5" fill="#7C3AED"/>
+<text x="44" y="298" font-size="13" fill="#3D4B63" letter-spacing=".6">RESEARCH</text>
+<rect x="330" y="283" width="146" height="22" rx="11" fill="#7C3AED" fill-opacity=".1" stroke="#7C3AED" stroke-opacity=".5"/>
+<circle cx="346" cy="294" r="6" fill="#7C3AED" fill-opacity=".3" class="ring"/>
+<circle cx="346" cy="294" r="3.2" fill="#7C3AED"/>
+<text x="404" y="298" font-size="11" fill="#7C3AED" text-anchor="middle" letter-spacing="1.5">ONGOING</text>
+</g>
+<rect x="514" y="16" width="470" height="308" rx="14" fill="#FFFFFF" stroke="#D8E4F4"/>
+<text x="538" y="50" font-size="14.5" font-weight="700" fill="#0B1220" letter-spacing="2"><tspan fill="#DB2777">◆</tspan> FOCUS INDEX</text>
+<text x="960" y="50" font-size="10.5" fill="#7C8CA6" text-anchor="end" letter-spacing="1.4">SELF-REPORTED · Q3</text>
+<line x1="538" y1="62" x2="960" y2="62" stroke="#D8E4F4"/>
+<g class="rise" style="animation-delay:0.30s">
+<text x="538" y="100" font-size="12.5" fill="#3D4B63">PHYSICS</text>
+<text x="960" y="100" font-size="12" fill="#0E7490" text-anchor="end" font-weight="700">92%</text>
+<rect x="538" y="110" width="422" height="10" rx="5" fill="#EDF3FB"/>
+<g class="bar" style="animation-delay:0.40s"><rect x="538" y="110" width="388.2" height="10" rx="5" fill="#0E7490" fill-opacity=".85"/></g>
+</g>
+<g class="rise" style="animation-delay:0.40s">
+<text x="538" y="134" font-size="12.5" fill="#3D4B63">AI / ML</text>
+<text x="960" y="134" font-size="12" fill="#2563EB" text-anchor="end" font-weight="700">78%</text>
+<rect x="538" y="144" width="422" height="10" rx="5" fill="#EDF3FB"/>
+<g class="bar" style="animation-delay:0.50s"><rect x="538" y="144" width="329.2" height="10" rx="5" fill="#2563EB" fill-opacity=".85"/></g>
+</g>
+<g class="rise" style="animation-delay:0.50s">
+<text x="538" y="168" font-size="12.5" fill="#3D4B63">DEEP LEARNING</text>
+<text x="960" y="168" font-size="12" fill="#7C3AED" text-anchor="end" font-weight="700">70%</text>
+<rect x="538" y="178" width="422" height="10" rx="5" fill="#EDF3FB"/>
+<g class="bar" style="animation-delay:0.60s"><rect x="538" y="178" width="295.4" height="10" rx="5" fill="#7C3AED" fill-opacity=".85"/></g>
+</g>
+<g class="rise" style="animation-delay:0.60s">
+<text x="538" y="202" font-size="12.5" fill="#3D4B63">SCIENTIFIC COMPUTING</text>
+<text x="960" y="202" font-size="12" fill="#047857" text-anchor="end" font-weight="700">64%</text>
+<rect x="538" y="212" width="422" height="10" rx="5" fill="#EDF3FB"/>
+<g class="bar" style="animation-delay:0.70s"><rect x="538" y="212" width="270.1" height="10" rx="5" fill="#047857" fill-opacity=".85"/></g>
+</g>
+<g class="rise" style="animation-delay:0.70s">
+<text x="538" y="236" font-size="12.5" fill="#3D4B63">QUANTUM COMPUTING</text>
+<text x="960" y="236" font-size="12" fill="#B45309" text-anchor="end" font-weight="700">52%</text>
+<rect x="538" y="246" width="422" height="10" rx="5" fill="#EDF3FB"/>
+<g class="bar" style="animation-delay:0.80s"><rect x="538" y="246" width="219.4" height="10" rx="5" fill="#B45309" fill-opacity=".85"/></g>
+</g>
+<g class="rise" style="animation-delay:0.80s">
+<text x="538" y="270" font-size="12.5" fill="#3D4B63">OPEN SOURCE</text>
+<text x="960" y="270" font-size="12" fill="#EA580C" text-anchor="end" font-weight="700">60%</text>
+<rect x="538" y="280" width="422" height="10" rx="5" fill="#EDF3FB"/>
+<g class="bar" style="animation-delay:0.90s"><rect x="538" y="280" width="253.2" height="10" rx="5" fill="#EA580C" fill-opacity=".85"/></g>
+</g>
+<text x="538" y="306" font-size="10.5" fill="#7C8CA6" letter-spacing="1.2">EXPLORATION VECTOR :: PHYSICS → MATHEMATICS → PROGRAMMING → AI/ML → RESEARCH</text>
 </svg>
