@@ -12,8 +12,13 @@ name: profile-assets
 # (scope: read:user) to include private contributions in the numbers.
 
 on:
+  # GitHub's floor for scheduled workflows is once every 5 minutes, and
+  # scheduled runs are best-effort — under load GitHub can add several
+  # minutes of delay, so a fresh commit normally shows up in roughly
+  # 5-15 minutes.  For a truly instant refresh, use the Actions tab ->
+  # "profile-assets" -> "Run workflow" (workflow_dispatch, below).
   schedule:
-    - cron: "0 */6 * * *" # every 6 hours
+    - cron: "*/5 * * * *" # every 5 minutes
   workflow_dispatch:
   push:
     branches: [main]
