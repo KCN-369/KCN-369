@@ -141,16 +141,6 @@ EXPLORATION VECTOR :: PHYSICS → MATHEMATICS → PROGRAMMING → AI/ML → DEEP
 
 <br/><br/>
 
-| NODE | LINK |
-|:--|:--|
-| `GITHUB` | [KCN-369](https://github.com/KCN-369) |
-| `LINKEDIN` | [KANHU-NAYAK](https://www.linkedin.com/in/kanhu-nayak-369kcn) |
-| `X` | [@KCN3210](https://x.com/KCN3210) |
-| `HUGGING FACE` | [KCN-369](https://huggingface.co/kcn-369) |
-| `ORCID` | [0009-0004-9507-6794](https://orcid.org/0009-0004-9507-6794) |
-| `EMAIL` | [KCN3210@gmail.com](mailto:kcn3210@gmail.com) |
-
-`EXTERNAL NODES :: ONLINE`
 
 <br/>
 
