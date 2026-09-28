@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 132" width="132" height="132"
+     role="img" aria-label="VS CODE">
+<title>VS CODE</title>
+<style>
+  text { font-family: 'JetBrains Mono','Fira Code','SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace; }
+  .in { animation: rise .75s cubic-bezier(.2,.85,.25,1) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px) scale(.94) }
+                    to   { opacity: 1; transform: none } }
+  .fl { animation: float 7.5s ease-in-out infinite; }
+  @keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-2.6px) } }
+  .tile { transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 66px 69px; }
+  .tile:hover { transform: translateY(-6px) scale(1.035); }
+  .card { stroke: #D8E4F4; stroke-width: 1.4; transition: stroke .32s ease; }
+  .tile:hover .card { stroke: #0E7490; stroke-width: 1.8; }
+  .bar { transform: scaleX(.3); transform-origin: 6px 13.8px;
+          transition: transform .5s cubic-bezier(.2,.85,.25,1); }
+  .tile:hover .bar { transform: scaleX(1); }
+  .glow { opacity: 0; transition: opacity .35s ease; }
+  .tile:hover .glow { opacity: .5; }
+  .ring { opacity: 0; transition: opacity .35s ease; transform-origin: 66px 58px;
+           animation: spin 14s linear infinite; animation-play-state: paused; }
+  .tile:hover .ring { opacity: .95; animation-play-state: running; }
+  .icon { transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 66px 58px; }
+  .tile:hover .icon { transform: scale(1.12); }
+  .lbl { transition: fill .32s ease; }
+  .tile:hover .lbl { fill: #0E7490; }
+  .hint { opacity: 0; transition: opacity .35s ease; }
+  .tile:hover .hint { opacity: 1; }
+  .sheen { opacity: 0; }
+  .tile:hover .sheen { animation: sheen .95s linear infinite; }
+  @keyframes sheen { 0% { transform: translateX(-70px) } 100% { transform: translateX(150px) } }
+  .tick { animation: pulse 2.6s ease-in-out infinite; }
+</style>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F8FE"/></linearGradient>
+  <radialGradient id="gl" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#007ACC" stop-opacity=".38"/>
+    <stop offset="1" stop-color="#007ACC" stop-opacity="0"/></radialGradient>
+  <linearGradient id="sh" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".9"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+</defs>
+<g class="in" transform="translate(0 0)" style="animation-delay:0.63s">
+<g class="fl" transform="translate(0 0)" style="animation-delay:-1.20s">
+<g class="tile">
+  <rect class="card" x="6" y="12" width="120" height="114" rx="15" fill="url(#bg)"/>
+  <rect class="bar" x="6" y="12" width="120" height="3.6" rx="1.8" fill="#007ACC"/>
+  <circle class="glow" cx="66.0" cy="58.0" r="40" fill="url(#gl)"/>
+  <circle class="ring" cx="66.0" cy="58.0" r="29" fill="none" stroke="#007ACC" stroke-width="1.2"
+          stroke-dasharray="5 6" stroke-opacity=".75"/>
+  <g class="icon" transform="translate(44.00 36.00) scale(0.34375)">
+    <g transform="translate(-0.0 -0.0)"><mask id="a" width="128" height="128" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#fff" fill-rule="evenodd" d="M90.767 127.126a7.968 7.968 0 0 0 6.35-.244l26.353-12.681a8 8 0 0 0 4.53-7.209V21.009a8 8 0 0 0-4.53-7.21L97.117 1.12a7.97 7.97 0 0 0-9.093 1.548l-50.45 46.026L15.6 32.013a5.328 5.328 0 0 0-6.807.302l-7.048 6.411a5.335 5.335 0 0 0-.006 7.888L20.796 64 1.74 81.387a5.336 5.336 0 0 0 .006 7.887l7.048 6.411a5.327 5.327 0 0 0 6.807.303l21.974-16.68 50.45 46.025a7.96 7.96 0 0 0 2.743 1.793Zm5.252-92.183L57.74 64l38.28 29.058V34.943Z" clip-rule="evenodd"/></mask><g mask="url(#a)"><path fill="#0065A9" d="M123.471 13.82 97.097 1.12A7.973 7.973 0 0 0 88 2.668L1.662 81.387a5.333 5.333 0 0 0 .006 7.887l7.052 6.411a5.333 5.333 0 0 0 6.811.303l103.971-78.875c3.488-2.646 8.498-.158 8.498 4.22v-.306a8.001 8.001 0 0 0-4.529-7.208Z"/><g filter="url(#b)"><path fill="#007ACC" d="m123.471 114.181-26.374 12.698A7.973 7.973 0 0 1 88 125.333L1.662 46.613a5.333 5.333 0 0 1 .006-7.887l7.052-6.411a5.333 5.333 0 0 1 6.811-.303l103.971 78.874c3.488 2.647 8.498.159 8.498-4.219v.306a8.001 8.001 0 0 1-4.529 7.208Z"/></g><g filter="url(#c)"><path fill="#1F9CF0" d="M97.098 126.882A7.977 7.977 0 0 1 88 125.333c2.952 2.952 8 .861 8-3.314V5.98c0-4.175-5.048-6.266-8-3.313a7.977 7.977 0 0 1 9.098-1.549L123.467 13.8A8 8 0 0 1 128 21.01v85.982a8 8 0 0 1-4.533 7.21l-26.369 12.681Z"/></g><path fill="url(#d)" fill-rule="evenodd" d="M90.69 127.126a7.968 7.968 0 0 0 6.349-.244l26.353-12.681a8 8 0 0 0 4.53-7.21V21.009a8 8 0 0 0-4.53-7.21L97.039 1.12a7.97 7.97 0 0 0-9.093 1.548l-50.45 46.026-21.974-16.68a5.328 5.328 0 0 0-6.807.302l-7.048 6.411a5.336 5.336 0 0 0-.006 7.888L20.718 64 1.662 81.386a5.335 5.335 0 0 0 .006 7.888l7.048 6.411a5.328 5.328 0 0 0 6.807.303l21.975-16.681 50.45 46.026a7.959 7.959 0 0 0 2.742 1.793Zm5.252-92.184L57.662 64l38.28 29.057V34.943Z" clip-rule="evenodd" opacity="0.25" style="mix-blend-mode:overlay"/></g><defs><filter id="b" width="144.744" height="113.408" x="-8.41115" y="22.5944" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset/><feGaussianBlur stdDeviation="4.16667"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend in2="BackgroundImageFix" mode="overlay" result="effect1_dropShadow_1_36"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1_36" result="shape"/></filter><filter id="c" width="56.6667" height="144.007" x="79.6667" y="-8.0035" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset/><feGaussianBlur stdDeviation="4.16667"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend in2="BackgroundImageFix" mode="overlay" result="effect1_dropShadow_1_36"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1_36" result="shape"/></filter><linearGradient id="d" x1="63.9222" x2="63.9222" y1="0.329902" y2="127.67" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs></g>
+  </g>
+  <text class="lbl" x="66.0" y="98" font-size="11" fill="#3D4B63" text-anchor="middle"
+        letter-spacing=".7" font-weight="600">VS CODE</text>
+  <text class="hint" x="66.0" y="114" font-size="7" fill="#007ACC" text-anchor="middle"
+        letter-spacing="1.6">OPEN DOCS &#8599;</text>
+  <path class="sheen" d="M6 27 L20 12 L34 12 L20 27 Z" fill="url(#sh)"/>
+  <circle class="tick" cx="18" cy="22" r="1.7" fill="#007ACC" style="animation-delay:-0.63s"/>
+</g></g></g>
+</svg>

@@ -1,0 +1,226 @@
+[
+ {
+  "key": "python",
+  "label": "PYTHON",
+  "category": "LANGUAGES",
+  "docs": "https://docs.python.org/3/",
+  "color": "#3776AB",
+  "file": "assets/tech/python.svg"
+ },
+ {
+  "key": "c",
+  "label": "C",
+  "category": "LANGUAGES",
+  "docs": "https://en.cppreference.com/w/",
+  "color": "#00599C",
+  "file": "assets/tech/c.svg"
+ },
+ {
+  "key": "javascript",
+  "label": "JAVASCRIPT",
+  "category": "LANGUAGES",
+  "docs": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  "color": "#F7DF1E",
+  "file": "assets/tech/javascript.svg"
+ },
+ {
+  "key": "typescript",
+  "label": "TYPESCRIPT",
+  "category": "LANGUAGES",
+  "docs": "https://www.typescriptlang.org/docs/",
+  "color": "#3178C6",
+  "file": "assets/tech/typescript.svg"
+ },
+ {
+  "key": "html5",
+  "label": "HTML5",
+  "category": "LANGUAGES",
+  "docs": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  "color": "#E34F26",
+  "file": "assets/tech/html5.svg"
+ },
+ {
+  "key": "css3",
+  "label": "CSS3",
+  "category": "LANGUAGES",
+  "docs": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  "color": "#1572B6",
+  "file": "assets/tech/css3.svg"
+ },
+ {
+  "key": "pytorch",
+  "label": "PYTORCH",
+  "category": "MACHINE LEARNING",
+  "docs": "https://pytorch.org/docs/stable/",
+  "color": "#EE4C2C",
+  "file": "assets/tech/pytorch.svg"
+ },
+ {
+  "key": "tensorflow",
+  "label": "TENSORFLOW",
+  "category": "MACHINE LEARNING",
+  "docs": "https://www.tensorflow.org/api_docs",
+  "color": "#FF6F00",
+  "file": "assets/tech/tensorflow.svg"
+ },
+ {
+  "key": "scikit-learn",
+  "label": "SCIKIT-LEARN",
+  "category": "MACHINE LEARNING",
+  "docs": "https://scikit-learn.org/stable/",
+  "color": "#F7931E",
+  "file": "assets/tech/scikit-learn.svg"
+ },
+ {
+  "key": "opencv",
+  "label": "OPENCV",
+  "category": "MACHINE LEARNING",
+  "docs": "https://docs.opencv.org/4.x/",
+  "color": "#5C3EE8",
+  "file": "assets/tech/opencv.svg"
+ },
+ {
+  "key": "hugging-face",
+  "label": "HUGGING FACE",
+  "category": "MACHINE LEARNING",
+  "docs": "https://huggingface.co/docs",
+  "color": "#FFD21E",
+  "file": "assets/tech/hugging-face.svg"
+ },
+ {
+  "key": "numpy",
+  "label": "NUMPY",
+  "category": "DATA / SCIENTIFIC",
+  "docs": "https://numpy.org/doc/stable/",
+  "color": "#013243",
+  "file": "assets/tech/numpy.svg"
+ },
+ {
+  "key": "pandas",
+  "label": "PANDAS",
+  "category": "DATA / SCIENTIFIC",
+  "docs": "https://pandas.pydata.org/docs/",
+  "color": "#150458",
+  "file": "assets/tech/pandas.svg"
+ },
+ {
+  "key": "matplotlib",
+  "label": "MATPLOTLIB",
+  "category": "DATA / SCIENTIFIC",
+  "docs": "https://matplotlib.org/stable/",
+  "color": "#11557C",
+  "file": "assets/tech/matplotlib.svg"
+ },
+ {
+  "key": "scipy",
+  "label": "SCIPY",
+  "category": "DATA / SCIENTIFIC",
+  "docs": "https://docs.scipy.org/doc/scipy/",
+  "color": "#8CAAE6",
+  "file": "assets/tech/scipy.svg"
+ },
+ {
+  "key": "jupyter",
+  "label": "JUPYTER",
+  "category": "DATA / SCIENTIFIC",
+  "docs": "https://docs.jupyter.org/",
+  "color": "#F37626",
+  "file": "assets/tech/jupyter.svg"
+ },
+ {
+  "key": "anaconda",
+  "label": "ANACONDA",
+  "category": "DATA / SCIENTIFIC",
+  "docs": "https://docs.anaconda.com/",
+  "color": "#44A833",
+  "file": "assets/tech/anaconda.svg"
+ },
+ {
+  "key": "qiskit",
+  "label": "QISKIT",
+  "category": "QUANTUM / WRITING",
+  "docs": "https://docs.quantum.ibm.com/",
+  "color": "#6929C4",
+  "file": "assets/tech/qiskit.svg"
+ },
+ {
+  "key": "latex",
+  "label": "LATEX",
+  "category": "QUANTUM / WRITING",
+  "docs": "https://www.latex-project.org/help/documentation/",
+  "color": "#008080",
+  "file": "assets/tech/latex.svg"
+ },
+ {
+  "key": "arxiv",
+  "label": "ARXIV",
+  "category": "QUANTUM / WRITING",
+  "docs": "https://info.arxiv.org/help/index.html",
+  "color": "#B31B1B",
+  "file": "assets/tech/arxiv.svg"
+ },
+ {
+  "key": "git",
+  "label": "GIT",
+  "category": "TOOLS / ENVIRONMENT",
+  "docs": "https://git-scm.com/doc",
+  "color": "#F05032",
+  "file": "assets/tech/git.svg"
+ },
+ {
+  "key": "linux",
+  "label": "LINUX",
+  "category": "TOOLS / ENVIRONMENT",
+  "docs": "https://www.kernel.org/doc/html/latest/",
+  "color": "#FCC624",
+  "file": "assets/tech/linux.svg"
+ },
+ {
+  "key": "bash",
+  "label": "BASH",
+  "category": "TOOLS / ENVIRONMENT",
+  "docs": "https://www.gnu.org/software/bash/manual/bash.html",
+  "color": "#4EAA25",
+  "file": "assets/tech/bash.svg"
+ },
+ {
+  "key": "docker",
+  "label": "DOCKER",
+  "category": "TOOLS / ENVIRONMENT",
+  "docs": "https://docs.docker.com/",
+  "color": "#2496ED",
+  "file": "assets/tech/docker.svg"
+ },
+ {
+  "key": "vs-code",
+  "label": "VS CODE",
+  "category": "TOOLS / ENVIRONMENT",
+  "docs": "https://code.visualstudio.com/docs",
+  "color": "#007ACC",
+  "file": "assets/tech/vs-code.svg"
+ },
+ {
+  "key": "react",
+  "label": "REACT",
+  "category": "WEB / VERSION HOST",
+  "docs": "https://react.dev/learn",
+  "color": "#61DAFB",
+  "file": "assets/tech/react.svg"
+ },
+ {
+  "key": "next-js",
+  "label": "NEXT.JS",
+  "category": "WEB / VERSION HOST",
+  "docs": "https://nextjs.org/docs",
+  "color": "#000000",
+  "file": "assets/tech/next-js.svg"
+ },
+ {
+  "key": "github",
+  "label": "GITHUB",
+  "category": "WEB / VERSION HOST",
+  "docs": "https://docs.github.com/",
+  "color": "#181717",
+  "file": "assets/tech/github.svg"
+ }
+]

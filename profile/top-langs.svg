@@ -1,162 +1,43 @@
-
-      <svg
-        width="495"
-        height="115"
-        viewBox="0 0 495 115"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        role="img"
-        aria-labelledby="descId"
-      >
-        <title id="titleId"></title>
-        <desc id="descId"></desc>
-        <style>
-          .header {
-            font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #00F0FF;
-            animation: fadeInAnimation 0.8s ease-in-out forwards;
-          }
-          @supports(-moz-appearance: auto) {
-            /* Selector detects Firefox */
-            .header { font-size: 15.5px; }
-          }
-          
-    @keyframes slideInAnimation {
-      from {
-        width: 0;
-      }
-      to {
-        width: calc(100%-100px);
-      }
-    }
-    @keyframes growWidthAnimation {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
-      }
-    }
-    .stat {
-      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #E6EDF3;
-    }
-    @supports(-moz-appearance: auto) {
-      /* Selector detects Firefox */
-      .stat { font-size:12px; }
-    }
-    .bold { font-weight: 700 }
-    .lang-name {
-      font: 400 11px "Segoe UI", Ubuntu, Sans-Serif;
-      fill: #E6EDF3;
-    }
-    .stagger {
-      opacity: 0;
-      animation: fadeInAnimation 0.3s ease-in-out forwards;
-    }
-    #rect-mask rect{
-      animation: slideInAnimation 1s ease-in-out forwards;
-    }
-    .lang-progress{
-      animation: growWidthAnimation 0.6s ease-in-out forwards;
-    }
-    .progress-background { fill: #ddd; }
-    
-          
-
-          
-      /* Animations */
-      @keyframes scaleInAnimation {
-        from {
-          transform: translate(-5px, 5px) scale(0);
-        }
-        to {
-          transform: translate(-5px, 5px) scale(1);
-        }
-      }
-      @keyframes fadeInAnimation {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-    
-          
-        </style>
-
-        
-        <defs>
-          
-          
-        </defs>
-        
-
-        <rect
-          data-testid="card-bg"
-          class="card-bg"
-          x="0.5"
-          y="0.5"
-          rx="12"
-          height="99%"
-          stroke="#e4e2e2"
-          width="494"
-          fill="#0B1020"
-          stroke-opacity="0"
-        />
-
-        
-      <g
-        data-testid="card-title"
-        transform="translate(25, 35)"
-      >
-        <g transform="translate(0, 0)">
-      <text
-        x="0"
-        y="0"
-        class="header"
-        data-testid="header"
-      >Most Used Languages</text>
-    </g>
-      </g>
-    
-
-        <g
-          data-testid="main-card-body"
-          transform="translate(0, 55)"
-        >
-          
-    <svg data-testid="lang-items" x="25">
-      
-  
-      <mask id="rect-mask">
-          <rect x="0" y="0" width="445" height="8" fill="white" rx="5"/>
-        </mask>
-        
-        <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="0"
-          y="0"
-          width="445"
-          height="8"
-          fill="#3572A5"
-        />
-      
-      
-    <g transform="translate(0, 25)">
-      <g transform="translate(0, 0)"><g transform="translate(0, 0)">
-    <g class="stagger" style="animation-delay: 450ms">
-      <circle cx="5" cy="6" r="5" fill="#3572A5" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Python 100.00%
-      </text>
-    </g>
-  </g></g>
-    </g>
-  
-    </svg>
-  
-        </g>
-      </svg>
-    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" width="1000" height="330" role="img" aria-label="Top languages for KCN-369">
+<title>KCN_LAB :: TOP LANGUAGES</title>
+<style>
+  text { font-family: 'JetBrains Mono','Fira Code','SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace; }
+  .row { animation: row .6s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes row { from { opacity: 0; transform: translateX(-14px) } to { opacity: 1; transform: none } }
+  .bar { animation: bar 1.5s cubic-bezier(.3,.9,.3,1) both; transform-box: fill-box; transform-origin: left center; }
+  @keyframes bar { from { transform: scaleX(0) } }
+  .pulse { animation: pulse 1.8s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity: .4 } 50% { opacity: 1 } }
+</style>
+<defs>
+  <linearGradient id="holo" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#22D3EE"/><stop offset=".38" stop-color="#60A5FA"/>
+    <stop offset=".68" stop-color="#A78BFA"/><stop offset="1" stop-color="#F472B6"/>
+  </linearGradient>
+  <linearGradient id="holoV" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#A78BFA"/><stop offset=".55" stop-color="#60A5FA"/>
+    <stop offset="1" stop-color="#22D3EE"/>
+  </linearGradient>
+  <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F8FE"/>
+  </linearGradient>
+  <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="2.2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<rect x="0" y="0" width="1000" height="330" rx="18" fill="url(#paper)"/>
+<rect x="0" y="0" width="1000" height="4" rx="2" fill="url(#holo)"/>
+<rect x=".75" y=".75" width="998.5" height="328.5" rx="17.5" fill="none" stroke="#D8E4F4" stroke-width="1.5"/>
+<text x="26" y="38" font-size="15" font-weight="700" fill="#0B1220" letter-spacing="1.8"><tspan fill="#DB2777">◆</tspan> TOP LANGUAGES</text>
+<text x="974" y="38" font-size="11" fill="#7C8CA6" text-anchor="end" letter-spacing="1">BY CODE SIZE</text>
+<line x1="26" y1="52" x2="974" y2="52" stroke="#D8E4F4"/>
+<g class="row" style="animation-delay:0.00s">
+<circle cx="34" cy="78.0" r="5" fill="#3572A5"/>
+<text x="48" y="82.0" font-size="12.5" fill="#0B1220" font-weight="600">Python</text>
+<text x="974" y="82.0" font-size="12" fill="#7C8CA6" text-anchor="end"><tspan fill="#0B1220" font-weight="700">100.0%</tspan> · 3.2kB</text>
+<rect x="48" y="91.0" width="800" height="8" rx="4" fill="#EDF3FB"/>
+<g class="bar" style="animation-delay:0.20s"><rect x="48" y="91.0" width="800.0" height="8" rx="4" fill="#3572A5"/></g>
+</g>
+</svg>

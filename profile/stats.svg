@@ -1,239 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" width="1000" height="470" role="img" aria-label="GitHub telemetry for KCN-369: level 2 INITIATE, 0 stars, 19 commits, 2 pull requests, 0 issues">
+<title>KCN_LAB :: GITHUB TELEMETRY</title>
+<style>
+  text { font-family: 'JetBrains Mono','Fira Code','SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace; }
+  .rise { animation: rise .7s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(12px) } to { opacity: 1; transform: none } }
+  .slide { animation: slide .6s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes slide { from { opacity: 0; transform: translateX(14px) } to { opacity: 1; transform: none } }
+  .trace { animation: trace 8s linear infinite; }
+  @keyframes trace { to { stroke-dashoffset: -668 } }
+  .spin { animation: spin 16s linear infinite; transform-box: fill-box; transform-origin: center; }
+  @keyframes spin { to { transform: rotate(360deg) } }
+  .fill { animation: fill 2.2s cubic-bezier(.3,.9,.3,1) both .3s; }
+  @keyframes fill { from { stroke-dashoffset: 465.0 } }
+  .bar { animation: bar 1.8s cubic-bezier(.3,.9,.3,1) both .4s; transform-box: fill-box; transform-origin: left center; }
+  @keyframes bar { from { transform: scaleX(0) } }
+  .shine { animation: shine 3.4s ease-in-out infinite 1.6s; }
+  @keyframes shine { 0% { transform: translateX(0) } 60%,100% { transform: translateX(552px) } }
+  .hl { animation: hl 5.5s ease-in-out infinite; }
+  @keyframes hl { 0%,100% { fill-opacity: .04 } 8% { fill-opacity: .14 } 20% { fill-opacity: .04 } }
+  .cur { animation: cur 1.8s ease-in-out infinite; }
+  @keyframes cur { 0%,100% { fill-opacity: .9 } 50% { fill-opacity: .5 } }
+  .pulse { animation: pulse 1.8s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity: .4 } 50% { opacity: 1 } }
+</style>
+<defs>
+  <linearGradient id="holo" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#22D3EE"/><stop offset=".38" stop-color="#60A5FA"/>
+    <stop offset=".68" stop-color="#A78BFA"/><stop offset="1" stop-color="#F472B6"/>
+  </linearGradient>
+  <linearGradient id="holoV" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#A78BFA"/><stop offset=".55" stop-color="#60A5FA"/>
+    <stop offset="1" stop-color="#22D3EE"/>
+  </linearGradient>
+  <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F8FE"/>
+  </linearGradient>
+  <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="2.2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6"/></filter>
 
-      <svg
-        width="467"
-        height="195"
-        viewBox="0 0 467 195"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        role="img"
-        aria-labelledby="descId"
-      >
-        <title id="titleId">KANHU_NAYAK&#39;s GitHub Stats, Rank: C</title>
-        <desc id="descId">Total Stars Earned: 0, Total Commits  : 17, Total PRs: 2, Total Issues: 0, Contributed to (last year): 0</desc>
-        <style>
-          .header {
-            font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #00F0FF;
-            animation: fadeInAnimation 0.8s ease-in-out forwards;
-          }
-          @supports(-moz-appearance: auto) {
-            /* Selector detects Firefox */
-            .header { font-size: 15.5px; }
-          }
-          
-    .stat {
-      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #E6EDF3;
-    }
-    @supports(-moz-appearance: auto) {
-      /* Selector detects Firefox */
-      .stat { font-size:12px; }
-    }
-    .stagger {
-      opacity: 0;
-      animation: fadeInAnimation 0.3s ease-in-out forwards;
-    }
-    .rank-text {
-      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #E6EDF3;
-      animation: scaleInAnimation 0.3s ease-in-out forwards;
-    }
-    .rank-percentile-header {
-      font-size: 14px;
-    }
-    .rank-percentile-text {
-      font-size: 16px;
-    }
-    
-    .not_bold { font-weight: 400 }
-    .bold { font-weight: 700 }
-    .icon {
-      fill: #FF2BD6;
-      display: block;
-    }
-
-    .rank-circle-rim {
-      stroke: #8B5CF6;
-      fill: none;
-      stroke-width: 6;
-      opacity: 0.2;
-    }
-    .rank-circle {
-      stroke: #8B5CF6;
-      stroke-dasharray: 250;
-      fill: none;
-      stroke-width: 6;
-      stroke-linecap: round;
-      opacity: 0.8;
-      transform-origin: -10px 8px;
-      transform: rotate(-90deg);
-      animation: rankAnimation 1s forwards ease-in-out;
-    }
-    
-    @keyframes rankAnimation {
-      from {
-        stroke-dashoffset: 251.32741228718345;
-      }
-      to {
-        stroke-dashoffset: 241.2646008442853;
-      }
-    }
-  
-  
-          
-
-          
-      /* Animations */
-      @keyframes scaleInAnimation {
-        from {
-          transform: translate(-5px, 5px) scale(0);
-        }
-        to {
-          transform: translate(-5px, 5px) scale(1);
-        }
-      }
-      @keyframes fadeInAnimation {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-    
-          
-        </style>
-
-        
-        <defs>
-          
-          
-        </defs>
-        
-
-        <rect
-          data-testid="card-bg"
-          class="card-bg"
-          x="0.5"
-          y="0.5"
-          rx="12"
-          height="99%"
-          stroke="#e4e2e2"
-          width="466"
-          fill="#0B1020"
-          stroke-opacity="0"
-        />
-
-        
-      <g
-        data-testid="card-title"
-        transform="translate(25, 35)"
-      >
-        <g transform="translate(0, 0)">
-      <text
-        x="0"
-        y="0"
-        class="header"
-        data-testid="header"
-      >KANHU_NAYAK&#39;s GitHub Stats</text>
-    </g>
-      </g>
-    
-
-        <g
-          data-testid="main-card-body"
-          transform="translate(0, 55)"
-        >
-          
-    <g data-testid="rank-circle"
-          transform="translate(390.5, 47.5)">
-        <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
-        <circle class="rank-circle" cx="-10" cy="8" r="40" />
-        <g class="rank-text">
-          
-        <text x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
-          C
-        </text>
-      
-        </g>
-      </g>
-    <svg x="0" y="0">
-      <g transform="translate(0, 0)">
-    <g class="stagger" style="animation-delay: 450ms" transform="translate(25, 0)">
-      
-    <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-      <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
-    </svg>
-  
-      <text class="stat  bold" x="25" y="12.5">Total Stars Earned:</text>
-      <text
-        class="stat  bold"
-        x="224.01"
-        y="12.5"
-        data-testid="stars"
-      >0</text>
-    </g>
-  </g><g transform="translate(0, 25)">
-    <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
-      
-    <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-      <path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"/>
-    </svg>
-  
-      <text class="stat  bold" x="25" y="12.5">Total Commits:</text>
-      <text
-        class="stat  bold"
-        x="224.01"
-        y="12.5"
-        data-testid="commits"
-      >17</text>
-    </g>
-  </g><g transform="translate(0, 50)">
-    <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
-      
-    <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-      <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
-    </svg>
-  
-      <text class="stat  bold" x="25" y="12.5">Total PRs:</text>
-      <text
-        class="stat  bold"
-        x="224.01"
-        y="12.5"
-        data-testid="prs"
-      >2</text>
-    </g>
-  </g><g transform="translate(0, 75)">
-    <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
-      
-    <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-      <path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z"/>
-    </svg>
-  
-      <text class="stat  bold" x="25" y="12.5">Total Issues:</text>
-      <text
-        class="stat  bold"
-        x="224.01"
-        y="12.5"
-        data-testid="issues"
-      >0</text>
-    </g>
-  </g><g transform="translate(0, 100)">
-    <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
-      
-    <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-      <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
-    </svg>
-  
-      <text class="stat  bold" x="25" y="12.5">Contributed to (last year):</text>
-      <text
-        class="stat  bold"
-        x="224.01"
-        y="12.5"
-        data-testid="contribs"
-      >0</text>
-    </g>
-  </g>
-    </svg>
-  
-        </g>
-      </svg>
-    
+  <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/>
+    <stop offset=".55" stop-color="#A78BFA"/><stop offset="1" stop-color="#F472B6"/></linearGradient>
+  <linearGradient id="xpg" x1="0" x2="1"><stop offset="0" stop-color="#22D3EE"/>
+    <stop offset=".6" stop-color="#A78BFA"/><stop offset="1" stop-color="#F472B6"/></linearGradient>
+  <linearGradient id="shine" x1="0" x2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".85"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+  <radialGradient id="halo"><stop offset=".55" stop-color="#A78BFA" stop-opacity=".18"/>
+    <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></radialGradient>
+</defs>
+<rect x="0" y="0" width="1000" height="470" rx="18" fill="url(#paper)"/>
+<rect x="0" y="0" width="1000" height="4" rx="2" fill="url(#holo)"/>
+<rect x=".75" y=".75" width="998.5" height="468.5" rx="17.5" fill="none" stroke="#D8E4F4" stroke-width="1.5"/>
+<g class="rise" style="animation-delay:0.00s">
+<rect x="0.8" y="20.8" width="236.5" height="94.5" rx="14" fill="#FFFFFF" stroke="#D8E4F4" stroke-width="1.4"/>
+<rect x="0.8" y="20.8" width="236.5" height="3" rx="1.5" fill="#0E7490"/>
+<rect x="0.8" y="20.8" width="236.5" height="94.5" rx="14" fill="none" stroke="#0E7490" stroke-width="2" stroke-opacity=".55" stroke-dasharray="80 668" class="trace" style="animation-delay:-0.0s"/>
+<circle cx="46.0" cy="68.0" r="26" fill="#0E7490" fill-opacity=".08"/>
+<circle cx="46.0" cy="68.0" r="26" fill="none" stroke="#0E7490" stroke-opacity=".5" stroke-width="1.2" stroke-dasharray="5 5" class="spin"/>
+<path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v16H6.5A2.5 2.5 0 0 0 4 20.5zM4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5M8 7h8M8 11h6" transform="translate(34.0 56.0) scale(1.0)" fill="none" stroke="#0E7490" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="88.0" y="70.0" font-size="30" font-weight="800" fill="#0B1220">1</text>
+<text x="89.0" y="92.0" font-size="10.5" fill="#7C8CA6" letter-spacing="1.5">REPOSITORIES</text>
+</g>
+<g class="rise" style="animation-delay:0.12s">
+<rect x="254.8" y="20.8" width="236.5" height="94.5" rx="14" fill="#FFFFFF" stroke="#D8E4F4" stroke-width="1.4"/>
+<rect x="254.8" y="20.8" width="236.5" height="3" rx="1.5" fill="#047857"/>
+<rect x="254.8" y="20.8" width="236.5" height="94.5" rx="14" fill="none" stroke="#047857" stroke-width="2" stroke-opacity=".55" stroke-dasharray="80 668" class="trace" style="animation-delay:-1.3s"/>
+<circle cx="300.0" cy="68.0" r="26" fill="#047857" fill-opacity=".08"/>
+<circle cx="300.0" cy="68.0" r="26" fill="none" stroke="#047857" stroke-opacity=".5" stroke-width="1.2" stroke-dasharray="5 5" class="spin"/>
+<path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM2 12h6M16 12h6" transform="translate(288.0 56.0) scale(1.0)" fill="none" stroke="#047857" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="342.0" y="70.0" font-size="30" font-weight="800" fill="#0B1220">19</text>
+<text x="343.0" y="92.0" font-size="10.5" fill="#7C8CA6" letter-spacing="1.5">COMMITS · 2026</text>
+</g>
+<g class="rise" style="animation-delay:0.24s">
+<rect x="508.8" y="20.8" width="236.5" height="94.5" rx="14" fill="#FFFFFF" stroke="#D8E4F4" stroke-width="1.4"/>
+<rect x="508.8" y="20.8" width="236.5" height="3" rx="1.5" fill="#B45309"/>
+<rect x="508.8" y="20.8" width="236.5" height="94.5" rx="14" fill="none" stroke="#B45309" stroke-width="2" stroke-opacity=".55" stroke-dasharray="80 668" class="trace" style="animation-delay:-2.6s"/>
+<circle cx="554.0" cy="68.0" r="26" fill="#B45309" fill-opacity=".08"/>
+<circle cx="554.0" cy="68.0" r="26" fill="none" stroke="#B45309" stroke-opacity=".5" stroke-width="1.2" stroke-dasharray="5 5" class="spin"/>
+<path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z" transform="translate(542.0 56.0) scale(1.0)" fill="none" stroke="#B45309" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="596.0" y="70.0" font-size="30" font-weight="800" fill="#0B1220">0</text>
+<text x="597.0" y="92.0" font-size="10.5" fill="#7C8CA6" letter-spacing="1.5">STARS EARNED</text>
+</g>
+<g class="rise" style="animation-delay:0.36s">
+<rect x="762.8" y="20.8" width="236.5" height="94.5" rx="14" fill="#FFFFFF" stroke="#D8E4F4" stroke-width="1.4"/>
+<rect x="762.8" y="20.8" width="236.5" height="3" rx="1.5" fill="#DB2777"/>
+<rect x="762.8" y="20.8" width="236.5" height="94.5" rx="14" fill="none" stroke="#DB2777" stroke-width="2" stroke-opacity=".55" stroke-dasharray="80 668" class="trace" style="animation-delay:-3.9s"/>
+<circle cx="808.0" cy="68.0" r="26" fill="#DB2777" fill-opacity=".08"/>
+<circle cx="808.0" cy="68.0" r="26" fill="none" stroke="#DB2777" stroke-opacity=".5" stroke-width="1.2" stroke-dasharray="5 5" class="spin"/>
+<path d="M16 20v-1.5a3.5 3.5 0 0 0-3.5-3.5h-5A3.5 3.5 0 0 0 4 18.5V20M10 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM20 20v-1.5a3.5 3.5 0 0 0-2.5-3.3M15.5 4.2a3.5 3.5 0 0 1 0 6.6" transform="translate(796.0 56.0) scale(1.0)" fill="none" stroke="#DB2777" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="850.0" y="70.0" font-size="30" font-weight="800" fill="#0B1220">6</text>
+<text x="851.0" y="92.0" font-size="10.5" fill="#7C8CA6" letter-spacing="1.5">FOLLOWERS</text>
+</g>
+<rect x=".75" y="132.8" width="468.5" height="320.5" rx="16" fill="#FFFFFF" stroke="#D8E4F4" stroke-width="1.4"/>
+<text x="26" y="168.0" font-size="15" font-weight="700" fill="#0B1220" letter-spacing="1.8"><tspan fill="#7C3AED">✦</tspan> LEVEL SYSTEM</text>
+<text x="446" y="168.0" font-size="11" fill="#7C8CA6" text-anchor="end" letter-spacing="1">XP <tspan fill="#0B1220" font-weight="700">128</tspan></text>
+<line x1="26" y1="182.0" x2="444" y2="182.0" stroke="#D8E4F4"/>
+<circle cx="128" cy="308" r="96" fill="url(#halo)"/>
+<circle cx="128" cy="308" r="89" fill="none" stroke="#0E7490" stroke-opacity=".35" stroke-width="1" stroke-dasharray="2 6" class="spin"/>
+<circle cx="128" cy="308" r="74" fill="none" stroke="#E4ECF7" stroke-width="10"/>
+<circle cx="128" cy="308" r="74" fill="none" stroke="url(#ring)" stroke-width="10" stroke-linecap="round" stroke-dasharray="465.0" stroke-dashoffset="360.8" transform="rotate(-90 128 308)" class="fill"/>
+<circle cx="128" cy="308" r="59" fill="#EDF3FB" stroke="#D8E4F4"/>
+<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" transform="translate(108 268) scale(1.6667)" fill="#3D4B63"/>
+<text x="128" y="330.0" font-size="17" font-weight="800" fill="#0B1220" text-anchor="middle" letter-spacing="1">LEVEL 2</text>
+<text x="128" y="348.0" font-size="10" fill="#7C8CA6" text-anchor="middle" letter-spacing="2">INITIATE</text>
+<g class="slide" style="animation-delay:0.25s">
+<rect x="238" y="209.0" width="216" height="32" rx="9" fill="#B45309" fill-opacity=".05" class="hl" style="animation-delay:0.0s"/>
+<path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z" transform="translate(248 216) scale(0.8333333333333334)" fill="none" stroke="#B45309" stroke-width="2.16" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="278" y="230.0" font-size="13" fill="#3D4B63">Total Stars</text>
+<text x="440" y="230.0" font-size="14" font-weight="700" fill="#0B1220" text-anchor="end">0</text>
+</g>
+<g class="slide" style="animation-delay:0.35s">
+<rect x="238" y="247.0" width="216" height="32" rx="9" fill="#047857" fill-opacity=".05" class="hl" style="animation-delay:1.1s"/>
+<path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM2 12h6M16 12h6" transform="translate(248 254) scale(0.8333333333333334)" fill="none" stroke="#047857" stroke-width="2.16" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="278" y="268.0" font-size="13" fill="#3D4B63">Total Commits</text>
+<text x="440" y="268.0" font-size="14" font-weight="700" fill="#0B1220" text-anchor="end">19</text>
+</g>
+<g class="slide" style="animation-delay:0.45s">
+<rect x="238" y="285.0" width="216" height="32" rx="9" fill="#7C3AED" fill-opacity=".05" class="hl" style="animation-delay:2.2s"/>
+<path d="M6 3a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM6 8v8M6 16a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM18 16a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM18 16V9a3 3 0 0 0-3-3h-4M13 3.5L10.5 6 13 8.5" transform="translate(248 292) scale(0.8333333333333334)" fill="none" stroke="#7C3AED" stroke-width="2.16" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="278" y="306.0" font-size="13" fill="#3D4B63">Pull Requests</text>
+<text x="440" y="306.0" font-size="14" font-weight="700" fill="#0B1220" text-anchor="end">2</text>
+</g>
+<g class="slide" style="animation-delay:0.55s">
+<rect x="238" y="323.0" width="216" height="32" rx="9" fill="#DB2777" fill-opacity=".05" class="hl" style="animation-delay:3.3s"/>
+<path d="M12 2.5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19zM12 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" transform="translate(248 330) scale(0.8333333333333334)" fill="none" stroke="#DB2777" stroke-width="2.16" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="278" y="344.0" font-size="13" fill="#3D4B63">Issues Opened</text>
+<text x="440" y="344.0" font-size="14" font-weight="700" fill="#0B1220" text-anchor="end">0</text>
+</g>
+<g class="slide" style="animation-delay:0.65s">
+<rect x="238" y="361.0" width="216" height="32" rx="9" fill="#0E7490" fill-opacity=".05" class="hl" style="animation-delay:4.4s"/>
+<path d="M2 12h4l2.5-6 4 12 3-9 2 3H22" transform="translate(248 368) scale(0.8333333333333334)" fill="none" stroke="#0E7490" stroke-width="2.16" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="278" y="382.0" font-size="13" fill="#3D4B63">Contributions</text>
+<text x="440" y="382.0" font-size="14" font-weight="700" fill="#0B1220" text-anchor="end">29</text>
+</g>
+<rect x="486.8" y="132.8" width="512.5" height="320.5" rx="16" fill="#FFFFFF" stroke="#D8E4F4" stroke-width="1.4"/>
+<text x="512" y="168.0" font-size="15" font-weight="700" fill="#0B1220" letter-spacing="1.8"><tspan fill="#0E7490">◆</tspan> PROGRESSION</text>
+<text x="976" y="168.0" font-size="11" fill="#7C8CA6" text-anchor="end" letter-spacing="1">MEMBER SINCE 2025</text>
+<line x1="512" y1="182.0" x2="974" y2="182.0" stroke="#D8E4F4"/>
+<text x="512" y="214.0" font-size="11" fill="#7C8CA6" letter-spacing="1">LV 2</text>
+<text x="974" y="214.0" font-size="11" fill="#7C8CA6" text-anchor="end" letter-spacing="1">LV 3 · 97 XP TO GO</text>
+<rect x="512" y="224.0" width="462" height="14" rx="7" fill="#EDF3FB" stroke="#D8E4F4"/>
+<g class="bar"><rect x="512" y="224.0" width="103.5" height="14" rx="7" fill="url(#xpg)"/><rect x="512" y="224.0" width="103.5" height="14" rx="7" fill="url(#xpg)" opacity=".45" filter="url(#glow)"/></g>
+<clipPath id="xpc"><rect x="512" y="224.0" width="103.5" height="14" rx="7"/></clipPath><g clip-path="url(#xpc)"><rect x="442" y="224.0" width="46" height="14" fill="url(#shine)" class="shine"/></g>
+<text x="743.0" y="258.0" font-size="10.5" fill="#7C8CA6" text-anchor="middle" letter-spacing="1">22% OF LEVEL 3 UNLOCKED</text>
+<text x="512" y="288.0" font-size="11" fill="#7C8CA6" letter-spacing="1.5">RANK LADDER</text>
+<polygon points="512.0,308 581.0,308 589.0,321 581.0,334 512.0,334 520.0,321" fill="#7C8CA6" fill-opacity="0.9" stroke="#7C8CA6" stroke-opacity="1" class="cur"/>
+<text x="552.5" y="325.0" font-size="9.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">LV0</text>
+<text x="552.5" y="352.0" font-size="10" fill="#7C8CA6" text-anchor="middle" letter-spacing="1">▲ INITIATE</text>
+<polygon points="589.0,308 658.0,308 666.0,321 658.0,334 589.0,334 597.0,321" fill="#EDF3FB" fill-opacity="1" stroke="#2563EB" stroke-opacity="0.4"/>
+<text x="629.5" y="325.0" font-size="9.5" font-weight="700" fill="#7C8CA6" text-anchor="middle">LV5</text>
+<polygon points="666.0,308 735.0,308 743.0,321 735.0,334 666.0,334 674.0,321" fill="#EDF3FB" fill-opacity="1" stroke="#0E7490" stroke-opacity="0.4"/>
+<text x="706.5" y="325.0" font-size="9.5" font-weight="700" fill="#7C8CA6" text-anchor="middle">LV10</text>
+<polygon points="743.0,308 812.0,308 820.0,321 812.0,334 743.0,334 751.0,321" fill="#EDF3FB" fill-opacity="1" stroke="#7C3AED" stroke-opacity="0.4"/>
+<text x="783.5" y="325.0" font-size="9.5" font-weight="700" fill="#7C8CA6" text-anchor="middle">LV20</text>
+<polygon points="820.0,308 889.0,308 897.0,321 889.0,334 820.0,334 828.0,321" fill="#EDF3FB" fill-opacity="1" stroke="#DB2777" stroke-opacity="0.4"/>
+<text x="860.5" y="325.0" font-size="9.5" font-weight="700" fill="#7C8CA6" text-anchor="middle">LV35</text>
+<polygon points="897.0,308 966.0,308 974.0,321 966.0,334 897.0,334 905.0,321" fill="#EDF3FB" fill-opacity="1" stroke="#B45309" stroke-opacity="0.4"/>
+<text x="937.5" y="325.0" font-size="9.5" font-weight="700" fill="#7C8CA6" text-anchor="middle">LV50</text>
+<text x="512" y="380.0" font-size="11" fill="#7C8CA6" letter-spacing="1.5">CODE SHARE</text>
+<g clip-path="url(#cc)"><rect x="512" y="390.0" width="462" height="10" fill="#EDF3FB"/><g class="bar"><rect x="512.0" y="390.0" width="462.6" height="10" fill="#3572A5"/></g></g>
+<clipPath id="cc"><rect x="512" y="390.0" width="462" height="10" rx="5"/></clipPath>
+<circle cx="517.0" cy="418.0" r="4.5" fill="#3572A5"/>
+<text x="527.0" y="422.0" font-size="11" fill="#3D4B63">Python <tspan fill="#7C8CA6">100%</tspan></text>
+</svg>
