@@ -38,48 +38,60 @@
 
     <div class="tip" id="tip" hidden></div>
 
-    <p class="hint">drag to rotate · scroll to zoom · hover a pillar for its date</p>
+    <p class="hint">drag to rotate · scroll to zoom · hover a pillar for its date · <b>&#9881; SETTINGS</b> for palette, camera &amp; motion</p>
   </section>
 
-  <aside class="panel">
-    <div class="group">
+  <aside class="panel" id="panel">
+    <div class="panel-head">
       <h2>YEAR</h2>
-      <div class="chips" id="yearChips"></div>
+      <button class="gear" id="gearBtn" type="button" aria-expanded="false" aria-controls="panelBody"
+              title="Viewer settings">
+        <svg class="gear-ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor"
+             stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3.1"/>
+          <path d="M19.3 13.1a7.6 7.6 0 0 0 .1-1.1 7.6 7.6 0 0 0-.1-1.1l2-1.6-2-3.4-2.4 1a7.7 7.7 0 0 0-1.8-1.1l-.4-2.5h-4l-.4 2.5a7.7 7.7 0 0 0-1.8 1.1l-2.4-1-2 3.4 2 1.6a7.6 7.6 0 0 0 0 2.2l-2 1.6 2 3.4 2.4-1a7.7 7.7 0 0 0 1.8 1.1l.4 2.5h4l.4-2.5a7.7 7.7 0 0 0 1.8-1.1l2.4 1 2-3.4z"/>
+        </svg>
+        <span>SETTINGS</span>
+      </button>
     </div>
+    <div class="chips" id="yearChips"></div>
+    <p class="note safe">viewer-only sandbox &middot; nothing here changes the README cards</p>
 
-    <div class="group">
-      <h2>PALETTE</h2>
-      <div class="chips" id="paletteChips"></div>
-    </div>
+    <div class="panel-body" id="panelBody" hidden>
+      <div class="group">
+        <h2>PALETTE</h2>
+        <div class="chips" id="paletteChips"></div>
+      </div>
 
-    <div class="group">
-      <h2>CAMERA</h2>
-      <label class="slider">YAW <output id="yawOut">0°</output>
-        <input type="range" id="yaw" min="-180" max="180" step="1" value="-35"/>
-      </label>
-      <label class="slider">PITCH <output id="pitchOut">0°</output>
-        <input type="range" id="pitch" min="5" max="85" step="1" value="34"/>
-      </label>
-      <label class="slider">ZOOM <output id="zoomOut">1.00×</output>
-        <input type="range" id="zoom" min="0.5" max="2.4" step="0.01" value="1"/>
-      </label>
-    </div>
+      <div class="group">
+        <h2>CAMERA</h2>
+        <label class="slider">YAW <output id="yawOut">0&deg;</output>
+          <input type="range" id="yaw" min="-180" max="180" step="1" value="-35"/>
+        </label>
+        <label class="slider">PITCH <output id="pitchOut">0&deg;</output>
+          <input type="range" id="pitch" min="5" max="85" step="1" value="34"/>
+        </label>
+        <label class="slider">ZOOM <output id="zoomOut">1.00&times;</output>
+          <input type="range" id="zoom" min="0.5" max="2.4" step="0.01" value="1"/>
+        </label>
+      </div>
 
-    <div class="group">
-      <h2>MOTION</h2>
-      <label class="toggle"><input type="checkbox" id="auto" checked/> <span>auto-rotate</span></label>
-      <label class="slider">SPEED <output id="speedOut">1.0×</output>
-        <input type="range" id="speed" min="0" max="3" step="0.1" value="1"/>
-      </label>
-      <label class="toggle"><input type="checkbox" id="labels" checked/> <span>axis labels</span></label>
-      <label class="toggle"><input type="checkbox" id="grid" checked/> <span>stage grid</span></label>
-      <button class="reset" id="reset" type="button">reset view</button>
-    </div>
+      <div class="group">
+        <h2>MOTION</h2>
+        <label class="toggle"><input type="checkbox" id="auto" checked/> <span>auto-rotate (slow drift)</span></label>
+        <label class="slider">SPEED <output id="speedOut">0.4&times;</output>
+          <input type="range" id="speed" min="0" max="3" step="0.1" value="0.4"/>
+        </label>
+        <label class="toggle"><input type="checkbox" id="labels" checked/> <span>axis labels</span></label>
+        <label class="toggle"><input type="checkbox" id="grid" checked/> <span>stage grid</span></label>
+        <button class="reset" id="reset" type="button">reset view</button>
+      </div>
 
-    <div class="group legend">
-      <h2>LEGEND</h2>
-      <div class="legend-row"><span>Less</span><i id="lg0"></i><i id="lg1"></i><i id="lg2"></i><i id="lg3"></i><i id="lg4"></i><span>More</span></div>
-      <p class="note">Pillar height = contributions that day · colour = palette position across the year.</p>
+      <div class="group legend">
+        <h2>LEGEND</h2>
+        <div class="legend-row"><span>Less</span><i id="lg0"></i><i id="lg1"></i><i id="lg2"></i><i id="lg3"></i><i id="lg4"></i><span>More</span></div>
+        <p class="note">Pillar height = contributions that day &middot; colour = palette position across the year.</p>
+      </div>
     </div>
   </aside>
 </main>

@@ -48,6 +48,8 @@
 > `0` ≈ Stay simple, accept weakness and give up<br/>
 > `1` ≈ Do whatever it takes to satisfy your curiosity **!!**
 
+<h4 align="center"><em>&ldquo;Curiosity kills comfortablity&rdquo;</em><br/><sub>~ kcn</sub></h4>
+
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
 <h2 align="center">◈ TECH STACK · EVERY TILE OPENS ITS OFFICIAL DOCS ↗</h2>

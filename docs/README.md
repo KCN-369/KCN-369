@@ -9,12 +9,26 @@ companion to the static card in the profile README.
 ## What it does
 
 * renders one glowing box per contribution day — height = contributions that day
+* **drifts by itself** — a slow turntable (~4°/second, one turn in ~90 s);
+  drag or scroll any time to take over
 * **drag** to rotate, **scroll** to zoom, or use the yaw / pitch / zoom sliders
-* auto-rotate with adjustable speed, plus a reset-view button
 * 5 palettes: holographic, aurora, heat, indigo, candy
 * switch between years (all years with calendar data are listed)
 * hover any pillar for its exact date and contribution count
 * live HUD: total, active days, current / longest streak, peak day, level
+
+### The settings drawer
+
+Everything except the **YEAR** chips is collapsed behind the gear button in the
+top-right of the control panel — palette, camera, motion and legend only appear
+once a visitor opens it (<kbd>Esc</kbd> closes it again). That keeps the first
+thing anyone sees the graph itself.
+
+Whatever a visitor picks is saved in `localStorage` on **their own machine**
+and is restored the next time they open the page. Nothing is written back to
+this repository: the SVG cards in `profile/` that `README.md` shows are rebuilt
+by the workflow from the GitHub API and are completely independent of the
+viewer's settings.
 
 ## Files
 
