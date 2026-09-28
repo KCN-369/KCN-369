@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 132" width="148" height="132"
+     role="img" aria-label="NUMPY">
+<title>NUMPY</title>
+<style>
+  text { font-family: 'JetBrains Mono','Fira Code','SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace; }
+  .in { animation: rise .75s cubic-bezier(.2,.85,.25,1) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px) scale(.94) }
+                    to   { opacity: 1; transform: none } }
+  .fl { animation: float 7.5s ease-in-out infinite; }
+  @keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-2.6px) } }
+  .tile { transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 74px 69px; }
+  .tile:hover { transform: translateY(-6px) scale(1.035); }
+  .card { stroke: #D8E4F4; stroke-width: 1.4; transition: stroke .32s ease; }
+  .tile:hover .card { stroke: #0E7490; stroke-width: 1.8; }
+  .bar { transform: scaleX(.3); transform-origin: 6px 13.8px;
+          transition: transform .5s cubic-bezier(.2,.85,.25,1); }
+  .tile:hover .bar { transform: scaleX(1); }
+  .glow { opacity: 0; transition: opacity .35s ease; }
+  .tile:hover .glow { opacity: .5; }
+  .ring { opacity: 0; transition: opacity .35s ease; transform-origin: 74px 58px;
+           animation: spin 14s linear infinite; animation-play-state: paused; }
+  .tile:hover .ring { opacity: .95; animation-play-state: running; }
+  .icon { transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 74px 58px; }
+  .tile:hover .icon { transform: scale(1.12); }
+  .lbl { transition: fill .32s ease; }
+  .tile:hover .lbl { fill: #0E7490; }
+  .hint { opacity: 0; transition: opacity .35s ease; }
+  .tile:hover .hint { opacity: 1; }
+  .sheen { opacity: 0; }
+  .tile:hover .sheen { animation: sheen .95s linear infinite; }
+  @keyframes sheen { 0% { transform: translateX(-70px) } 100% { transform: translateX(150px) } }
+  .tick { animation: pulse 2.6s ease-in-out infinite; }
+</style>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F8FE"/></linearGradient>
+  <radialGradient id="gl" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#013243" stop-opacity=".38"/>
+    <stop offset="1" stop-color="#013243" stop-opacity="0"/></radialGradient>
+  <linearGradient id="sh" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".9"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+</defs>
+<g class="in" transform="translate(0 0)" style="animation-delay:0.48s">
+<g class="fl" transform="translate(0 0)" style="animation-delay:-0.91s">
+<g class="tile">
+  <rect class="card" x="6" y="12" width="136" height="114" rx="15" fill="url(#bg)"/>
+  <rect class="bar" x="6" y="12" width="136" height="3.6" rx="1.8" fill="#013243"/>
+  <circle class="glow" cx="74.0" cy="58.0" r="40" fill="url(#gl)"/>
+  <circle class="ring" cx="74.0" cy="58.0" r="29" fill="none" stroke="#013243" stroke-width="1.2"
+          stroke-dasharray="5 6" stroke-opacity=".75"/>
+  <g class="icon" transform="translate(52.00 36.00) scale(1.83333)">
+    <g transform="translate(-0.0 -0.0)"><path fill="#013243" d="M10.315 4.876L6.3048 2.8517l-4.401 2.1965 4.1186 2.0683zm1.8381.9277l4.2045 2.1223-4.3622 2.1906-4.125-2.0718zm5.6153-2.9213l4.3193 2.1658-3.863 1.9402-4.2131-2.1252zm-1.859-.9329L12.021 0 8.1742 1.9193l4.0068 2.0208zm-3.0401 16.7443V24l4.7107-2.3507-.0053-5.3085zm4.7037-4.2057l-.0052-5.2528-4.6985 2.3356v5.2546zm5.6553-.9845v5.327l-4.0178 2.0052-.0029-5.3028zm0-1.8626V6.4214l-4.0253 2.001.0034 5.2633zM11.2062 11.571L8.0333 9.9756v6.895s-3.8804-8.2564-4.2399-8.998c-.0463-.0957-.2371-.2007-.2858-.2262C2.8118 7.2812.773 6.2485.773 6.2485V18.43l2.8204 1.5076v-6.3674s3.8392 7.3775 3.878 7.458c.0389.0807.4245.8582.8362 1.1314.5485.363 2.8992 1.7766 2.8992 1.7766z"/></g>
+  </g>
+  <text class="lbl" x="74.0" y="98" font-size="11" fill="#3D4B63" text-anchor="middle"
+        letter-spacing=".7" font-weight="600">NUMPY</text>
+  <text class="hint" x="74.0" y="114" font-size="7" fill="#013243" text-anchor="middle"
+        letter-spacing="1.6">OPEN DOCS &#8599;</text>
+  <path class="sheen" d="M6 27 L20 12 L34 12 L20 27 Z" fill="url(#sh)"/>
+  <circle class="tick" cx="18" cy="22" r="1.7" fill="#013243" style="animation-delay:-0.48s"/>
+</g></g></g>
+</svg>

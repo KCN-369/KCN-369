@@ -1061,60 +1061,6 @@ def render_flow(d: dict) -> str:
             + f"<style>{css}</style>\n<defs>{defs}</defs>\n" + "\n".join(o for o in out if o) + "\n</svg>\n")
 
 
-# ─────────────────────── README CONNECTIONS BLOCK ────────────────────────
-CONN_START, CONN_END = "<!-- CONNECTIONS:START -->", "<!-- CONNECTIONS:END -->"
-
-
-def render_connections(d: dict) -> str:
-    """HTML block inserted into README.md: real follower avatars, each linking to
-    that person's GitHub profile. (GitHub exposes no profile-visitor data, so the
-    only honest 'who is looking at this profile' list is the follower list.)"""
-    fl = d.get("followers_list") or []
-    total = d["followers"]
-    if not fl:
-        body = (f'<div align="center">\n<sub><code>◈ FOLLOWERS · {total} SO FAR</code></sub><br/><br/>'
-                f'<sub>no public followers yet — be the first <a href="https://github.com/KCN-369">'
-                f'@KCN-369</a></sub>\n</div>')
-        return f"{CONN_START}\n{body}\n{CONN_END}"
-
-    row = []
-    for f in fl[:14]:
-        row.append(f'<a href="{f["url"]}" title="{esc(f["login"])}">'
-                   f'<img src="{f["avatar"]}" width="44" height="44" alt="{esc(f["login"])}"/></a>')
-    items = []
-    for f in fl:
-        items.append(f'[<img src="{f["avatar"]}" width="26" height="26" alt="{esc(f["login"])}"/>]'
-                     f'({f["url"]})&nbsp; <b>@{esc(f["login"])}</b>'
-                     + (f' · <sub>{esc(f["name"])}</sub>' if f["name"] != f["login"] else ""))
-    demo_note = "  ·  _preview data_" if d["demo"] else ""
-    rows = "  \n".join(items)
-    plural = "" if total == 1 else "s"
-    body = (
-        '<div align="center">\n\n'
-        '<sub><code>◈ WHO FOLLOWS KCN_LAB · CLICK AN AVATAR TO OPEN THAT GITHUB PROFILE</code></sub>'
-        '<br/><br/>\n\n'
-        + " ".join(row) + '\n\n<br/><br/>\n\n'
-        '<details>\n'
-        f'<summary><b>▸ all {total} follower{plural}</b> <sub>— click to expand</sub></summary>\n\n'
-        '<br/>\n\n'
-        + rows + '\n\n'
-        '</details>\n\n'
-        f'</div>{demo_note}'
-    )
-    return f"{CONN_START}\n{body}\n{CONN_END}"
-
-
-def put_connections(readme_text: str, block: str) -> str:
-    """(Re)write the CONNECTIONS block inside README.md, keeping everything else."""
-    if CONN_START in readme_text:
-        return re.sub(re.escape(CONN_START) + r".*?" + re.escape(CONN_END),
-                      lambda _: block, readme_text, flags=re.S)
-    idx = readme_text.find("<h2 align=\"center\">◈ IDENTITY</h2>")
-    if idx == -1:
-        return readme_text
-    return readme_text[:idx] + block + "\n\n" + readme_text[idx:]
-
-
 # ───────────────────────────── JSON PAYLOAD ───────────────────────────────
 def build_payload(d: dict) -> dict:
     L = level_info(d)
@@ -1183,17 +1129,6 @@ def main() -> int:
         with open(path, "w", encoding="utf-8") as fh:
             json.dump(build_payload(data), fh, separators=(",", ":"))
         print(f"wrote {path} ({os.path.getsize(path) / 1024:.1f} KB)")
-
-    # keep the follower block in README.md in sync with real data
-    readme_path = os.path.join(ROOT, "README.md")
-    if os.path.exists(readme_path):
-        updated = put_connections(open(readme_path, encoding="utf-8").read(),
-                                  render_connections(data))
-        if updated != open(readme_path, encoding="utf-8").read():
-            with open(readme_path, "w", encoding="utf-8") as fh:
-                fh.write(updated)
-            print(f"updated {os.path.relpath(readme_path, ROOT)} "
-                  f"(follower block · {len(data.get('followers_list') or [])} avatars)")
 
     L, sm = level_info(data), summary(data)
     print(f"level {L['level']} ({L['rank']}) · xp {L['xp']} · {sm['total']} contributions (12m) · "

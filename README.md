@@ -38,32 +38,6 @@
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
-<!-- CONNECTIONS:START -->
-<div align="center">
-
-<sub><code>◈ WHO FOLLOWS KCN_LAB · CLICK AN AVATAR TO OPEN THAT GITHUB PROFILE</code></sub><br/><br/>
-
-<a href="https://github.com/lxlynx" title="lxlynx"><img src="https://avatars.githubusercontent.com/u/324573839?v=4" width="44" height="44" alt="lxlynx"/></a> <a href="https://github.com/Lxcardoza993" title="Lxcardoza993"><img src="https://avatars.githubusercontent.com/u/265670745?u=966e444a07c850f0a511606bbfe7797c46ab29a4&v=4" width="44" height="44" alt="Lxcardoza993"/></a> <a href="https://github.com/seckinyasar" title="seckinyasar"><img src="https://avatars.githubusercontent.com/u/86570205?u=32cc67695045a6c305f0c26aecf64a268eb48a64&v=4" width="44" height="44" alt="seckinyasar"/></a> <a href="https://github.com/helallao" title="helallao"><img src="https://avatars.githubusercontent.com/u/78656003?u=9c23d9553d718cf878b1543db64409aef98219d1&v=4" width="44" height="44" alt="helallao"/></a> <a href="https://github.com/alampolee" title="alampolee"><img src="https://avatars.githubusercontent.com/u/81109686?u=e962441ccd8c92921292f6a184301b6cbc16ec32&v=4" width="44" height="44" alt="alampolee"/></a> <a href="https://github.com/techno3455" title="techno3455"><img src="https://avatars.githubusercontent.com/u/72676508?v=4" width="44" height="44" alt="techno3455"/></a>
-
-<br/><br/>
-
-<details>
-<summary><b>▸ all 6 followers</b> <sub>— click to expand</sub></summary>
-
-<br/>
-
-[<img src="https://avatars.githubusercontent.com/u/324573839?v=4" width="26" height="26" alt="lxlynx"/>](https://github.com/lxlynx)&nbsp; <b>@lxlynx</b> · <sub>Alexander Cardoza</sub>  
-[<img src="https://avatars.githubusercontent.com/u/265670745?u=966e444a07c850f0a511606bbfe7797c46ab29a4&v=4" width="26" height="26" alt="Lxcardoza993"/>](https://github.com/Lxcardoza993)&nbsp; <b>@Lxcardoza993</b> · <sub>Lx 🎀</sub>  
-[<img src="https://avatars.githubusercontent.com/u/86570205?u=32cc67695045a6c305f0c26aecf64a268eb48a64&v=4" width="26" height="26" alt="seckinyasar"/>](https://github.com/seckinyasar)&nbsp; <b>@seckinyasar</b> · <sub>Seckin Yasar</sub>  
-[<img src="https://avatars.githubusercontent.com/u/78656003?u=9c23d9553d718cf878b1543db64409aef98219d1&v=4" width="26" height="26" alt="helallao"/>](https://github.com/helallao)&nbsp; <b>@helallao</b> · <sub>Ali Yaşar</sub>  
-[<img src="https://avatars.githubusercontent.com/u/81109686?u=e962441ccd8c92921292f6a184301b6cbc16ec32&v=4" width="26" height="26" alt="alampolee"/>](https://github.com/alampolee)&nbsp; <b>@alampolee</b> · <sub>Alan Paul</sub>  
-[<img src="https://avatars.githubusercontent.com/u/72676508?v=4" width="26" height="26" alt="techno3455"/>](https://github.com/techno3455)&nbsp; <b>@techno3455</b> · <sub>Trevor Blanchard</sub>
-
-</details>
-
-</div>
-<!-- CONNECTIONS:END -->
-
 <h2 align="center">◈ IDENTITY</h2>
 
 <div align="center">
@@ -76,49 +50,64 @@
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
-<h2 align="center">◈ TECH STACK · EVERY ICON OPENS ITS OFFICIAL DOCS ↗</h2>
+<h2 align="center">◈ TECH STACK · EVERY TILE OPENS ITS OFFICIAL DOCS ↗</h2>
 
 <div align="center">
 
+<sub>28 modules indexed · hover a tile to engage its interface · click to open the official documentation</sub>
+
+<br/>
+
 <sub><code>LANGUAGES</code></sub><br/><br/>
 
-<a href="https://docs.python.org/3/" title="Python — official documentation"><img src="https://skillicons.dev/icons?i=python&amp;theme=light" height="46" alt="Python"/></a>
-<a href="https://en.cppreference.com/w/" title="C++ — official reference"><img src="https://skillicons.dev/icons?i=cpp&amp;theme=light" height="46" alt="C++"/></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript — MDN documentation"><img src="https://skillicons.dev/icons?i=javascript&amp;theme=light" height="46" alt="JavaScript"/></a>
-<a href="https://www.typescriptlang.org/docs/" title="TypeScript — official documentation"><img src="https://skillicons.dev/icons?i=typescript&amp;theme=light" height="46" alt="TypeScript"/></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML — MDN documentation"><img src="https://skillicons.dev/icons?i=html&amp;theme=light" height="46" alt="HTML"/></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" title="CSS — MDN documentation"><img src="https://skillicons.dev/icons?i=css&amp;theme=light" height="46" alt="CSS"/></a>
+<a href="https://docs.python.org/3/" title="Python — official documentation"><img src="./assets/tech/python.svg" width="148" height="132" alt="Python"/></a>
+<a href="https://en.cppreference.com/w/" title="C — official documentation"><img src="./assets/tech/c.svg" width="148" height="132" alt="C"/></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript — official documentation"><img src="./assets/tech/javascript.svg" width="148" height="132" alt="JavaScript"/></a>
+<a href="https://www.typescriptlang.org/docs/" title="TypeScript — official documentation"><img src="./assets/tech/typescript.svg" width="148" height="132" alt="TypeScript"/></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML — official documentation"><img src="./assets/tech/html5.svg" width="148" height="132" alt="HTML"/></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" title="CSS — official documentation"><img src="./assets/tech/css3.svg" width="148" height="132" alt="CSS"/></a>
 
-<br/><br/><sub><code>AI / ML · DATA · SCIENTIFIC COMPUTING</code></sub><br/><br/>
+<br/><br/>
+<sub><code>MACHINE LEARNING</code></sub><br/><br/>
 
-<a href="https://pytorch.org/docs/stable/" title="PyTorch — official documentation"><img src="https://skillicons.dev/icons?i=pytorch&amp;theme=light" height="46" alt="PyTorch"/></a>
-<a href="https://www.tensorflow.org/api_docs" title="TensorFlow — API documentation"><img src="https://skillicons.dev/icons?i=tensorflow&amp;theme=light" height="46" alt="TensorFlow"/></a>
-<a href="https://scikit-learn.org/stable/" title="scikit-learn — official documentation"><img src="https://skillicons.dev/icons?i=scikitlearn&amp;theme=light" height="46" alt="scikit-learn"/></a>
-<a href="https://docs.opencv.org/4.x/" title="OpenCV — official documentation"><img src="https://skillicons.dev/icons?i=opencv&amp;theme=light" height="46" alt="OpenCV"/></a>
-<a href="https://numpy.org/doc/stable/" title="NumPy — official documentation"><img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" height="40" alt="NumPy"/></a>
-<a href="https://pandas.pydata.org/docs/" title="pandas — official documentation"><img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" height="40" alt="pandas"/></a>
-<a href="https://matplotlib.org/stable/" title="Matplotlib — official documentation"><img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=matplotlib&logoColor=white" height="40" alt="Matplotlib"/></a>
-<a href="https://docs.scipy.org/doc/scipy/" title="SciPy — official documentation"><img src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white" height="40" alt="SciPy"/></a>
-<a href="https://docs.jupyter.org/" title="Jupyter — official documentation"><img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" height="40" alt="Jupyter"/></a>
-<a href="https://docs.anaconda.com/" title="Anaconda — official documentation"><img src="https://skillicons.dev/icons?i=anaconda&amp;theme=light" height="46" alt="Anaconda"/></a>
+<a href="https://pytorch.org/docs/stable/" title="PyTorch — official documentation"><img src="./assets/tech/pytorch.svg" width="148" height="132" alt="PyTorch"/></a>
+<a href="https://www.tensorflow.org/api_docs" title="TensorFlow — official documentation"><img src="./assets/tech/tensorflow.svg" width="148" height="132" alt="TensorFlow"/></a>
+<a href="https://scikit-learn.org/stable/" title="scikit-learn — official documentation"><img src="./assets/tech/scikit-learn.svg" width="148" height="132" alt="scikit-learn"/></a>
+<a href="https://docs.opencv.org/4.x/" title="OpenCV — official documentation"><img src="./assets/tech/opencv.svg" width="148" height="132" alt="OpenCV"/></a>
+<a href="https://huggingface.co/docs" title="Hugging Face — official documentation"><img src="./assets/tech/hugging-face.svg" width="148" height="132" alt="Hugging Face"/></a>
 
-<br/><br/><sub><code>QUANTUM · RESEARCH</code></sub><br/><br/>
+<br/><br/>
+<sub><code>DATA · SCIENTIFIC COMPUTING</code></sub><br/><br/>
 
-<a href="https://docs.quantum.ibm.com/" title="Qiskit / IBM Quantum — official documentation"><img src="https://img.shields.io/badge/Qiskit-6929C4?style=flat-square&logo=qiskit&logoColor=white" height="40" alt="Qiskit"/></a>
-<a href="https://huggingface.co/docs" title="Hugging Face — official documentation"><img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=0B1220" height="40" alt="Hugging Face"/></a>
-<a href="https://www.latex-project.org/help/documentation/" title="LaTeX — official documentation"><img src="https://skillicons.dev/icons?i=latex&amp;theme=light" height="46" alt="LaTeX"/></a>
-<a href="https://info.arxiv.org/help/index.html" title="arXiv — help &amp; documentation"><img src="https://img.shields.io/badge/arXiv-B31B1B?style=flat-square&logo=arxiv&logoColor=white" height="40" alt="arXiv"/></a>
+<a href="https://numpy.org/doc/stable/" title="NumPy — official documentation"><img src="./assets/tech/numpy.svg" width="148" height="132" alt="NumPy"/></a>
+<a href="https://pandas.pydata.org/docs/" title="pandas — official documentation"><img src="./assets/tech/pandas.svg" width="148" height="132" alt="pandas"/></a>
+<a href="https://matplotlib.org/stable/" title="Matplotlib — official documentation"><img src="./assets/tech/matplotlib.svg" width="148" height="132" alt="Matplotlib"/></a>
+<a href="https://docs.scipy.org/doc/scipy/" title="SciPy — official documentation"><img src="./assets/tech/scipy.svg" width="148" height="132" alt="SciPy"/></a>
+<a href="https://docs.jupyter.org/" title="Jupyter — official documentation"><img src="./assets/tech/jupyter.svg" width="148" height="132" alt="Jupyter"/></a>
+<a href="https://docs.anaconda.com/" title="Anaconda — official documentation"><img src="./assets/tech/anaconda.svg" width="148" height="132" alt="Anaconda"/></a>
 
-<br/><br/><sub><code>ENGINEERING · TOOLING</code></sub><br/><br/>
+<br/><br/>
+<sub><code>QUANTUM · RESEARCH</code></sub><br/><br/>
 
-<a href="https://git-scm.com/doc" title="Git — official documentation"><img src="https://skillicons.dev/icons?i=git&amp;theme=light" height="46" alt="Git"/></a>
-<a href="https://www.kernel.org/doc/html/latest/" title="Linux kernel — official documentation"><img src="https://skillicons.dev/icons?i=linux&amp;theme=light" height="46" alt="Linux"/></a>
-<a href="https://www.gnu.org/software/bash/manual/bash.html" title="Bash — official manual"><img src="https://skillicons.dev/icons?i=bash&amp;theme=light" height="46" alt="Bash"/></a>
-<a href="https://docs.docker.com/" title="Docker — official documentation"><img src="https://skillicons.dev/icons?i=docker&amp;theme=light" height="46" alt="Docker"/></a>
-<a href="https://code.visualstudio.com/docs" title="VS Code — official documentation"><img src="https://skillicons.dev/icons?i=vscode&amp;theme=light" height="46" alt="VS Code"/></a>
-<a href="https://react.dev/learn" title="React — official documentation"><img src="https://skillicons.dev/icons?i=react&amp;theme=light" height="46" alt="React"/></a>
-<a href="https://nextjs.org/docs" title="Next.js — official documentation"><img src="https://skillicons.dev/icons?i=nextjs&amp;theme=light" height="46" alt="Next.js"/></a>
-<a href="https://docs.github.com/" title="GitHub Docs"><img src="https://skillicons.dev/icons?i=github&amp;theme=light" height="46" alt="GitHub"/></a>
+<a href="https://docs.quantum.ibm.com/" title="Qiskit — official documentation"><img src="./assets/tech/qiskit.svg" width="148" height="132" alt="Qiskit"/></a>
+<a href="https://www.latex-project.org/help/documentation/" title="LaTeX — official documentation"><img src="./assets/tech/latex.svg" width="148" height="132" alt="LaTeX"/></a>
+<a href="https://info.arxiv.org/help/index.html" title="arXiv — official documentation"><img src="./assets/tech/arxiv.svg" width="148" height="132" alt="arXiv"/></a>
+
+<br/><br/>
+<sub><code>TOOLS · ENVIRONMENT</code></sub><br/><br/>
+
+<a href="https://git-scm.com/doc" title="Git — official documentation"><img src="./assets/tech/git.svg" width="148" height="132" alt="Git"/></a>
+<a href="https://www.kernel.org/doc/html/latest/" title="Linux — official documentation"><img src="./assets/tech/linux.svg" width="148" height="132" alt="Linux"/></a>
+<a href="https://www.gnu.org/software/bash/manual/bash.html" title="Bash — official documentation"><img src="./assets/tech/bash.svg" width="148" height="132" alt="Bash"/></a>
+<a href="https://docs.docker.com/" title="Docker — official documentation"><img src="./assets/tech/docker.svg" width="148" height="132" alt="Docker"/></a>
+<a href="https://code.visualstudio.com/docs" title="VS Code — official documentation"><img src="./assets/tech/vs-code.svg" width="148" height="132" alt="VS Code"/></a>
+
+<br/><br/>
+<sub><code>WEB · VERSION HOST</code></sub><br/><br/>
+
+<a href="https://react.dev/learn" title="React — official documentation"><img src="./assets/tech/react.svg" width="148" height="132" alt="React"/></a>
+<a href="https://nextjs.org/docs" title="Next.js — official documentation"><img src="./assets/tech/next-js.svg" width="148" height="132" alt="Next.js"/></a>
+<a href="https://docs.github.com/" title="GitHub — official documentation"><img src="./assets/tech/github.svg" width="148" height="132" alt="GitHub"/></a>
 
 </div>
 

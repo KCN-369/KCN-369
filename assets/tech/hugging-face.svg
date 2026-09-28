@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 132" width="148" height="132"
+     role="img" aria-label="HUGGING FACE">
+<title>HUGGING FACE</title>
+<style>
+  text { font-family: 'JetBrains Mono','Fira Code','SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace; }
+  .in { animation: rise .75s cubic-bezier(.2,.85,.25,1) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px) scale(.94) }
+                    to   { opacity: 1; transform: none } }
+  .fl { animation: float 7.5s ease-in-out infinite; }
+  @keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-2.6px) } }
+  .tile { transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 74px 69px; }
+  .tile:hover { transform: translateY(-6px) scale(1.035); }
+  .card { stroke: #D8E4F4; stroke-width: 1.4; transition: stroke .32s ease; }
+  .tile:hover .card { stroke: #0E7490; stroke-width: 1.8; }
+  .bar { transform: scaleX(.3); transform-origin: 6px 13.8px;
+          transition: transform .5s cubic-bezier(.2,.85,.25,1); }
+  .tile:hover .bar { transform: scaleX(1); }
+  .glow { opacity: 0; transition: opacity .35s ease; }
+  .tile:hover .glow { opacity: .5; }
+  .ring { opacity: 0; transition: opacity .35s ease; transform-origin: 74px 58px;
+           animation: spin 14s linear infinite; animation-play-state: paused; }
+  .tile:hover .ring { opacity: .95; animation-play-state: running; }
+  .icon { transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 74px 58px; }
+  .tile:hover .icon { transform: scale(1.12); }
+  .lbl { transition: fill .32s ease; }
+  .tile:hover .lbl { fill: #0E7490; }
+  .hint { opacity: 0; transition: opacity .35s ease; }
+  .tile:hover .hint { opacity: 1; }
+  .sheen { opacity: 0; }
+  .tile:hover .sheen { animation: sheen .95s linear infinite; }
+  @keyframes sheen { 0% { transform: translateX(-70px) } 100% { transform: translateX(150px) } }
+  .tick { animation: pulse 2.6s ease-in-out infinite; }
+</style>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F8FE"/></linearGradient>
+  <radialGradient id="gl" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#9B8012" stop-opacity=".38"/>
+    <stop offset="1" stop-color="#9B8012" stop-opacity="0"/></radialGradient>
+  <linearGradient id="sh" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".9"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+</defs>
+<g class="in" transform="translate(0 0)" style="animation-delay:0.39s">
+<g class="fl" transform="translate(0 0)" style="animation-delay:-0.74s">
+<g class="tile">
+  <rect class="card" x="6" y="12" width="136" height="114" rx="15" fill="url(#bg)"/>
+  <rect class="bar" x="6" y="12" width="136" height="3.6" rx="1.8" fill="#9B8012"/>
+  <circle class="glow" cx="74.0" cy="58.0" r="40" fill="url(#gl)"/>
+  <circle class="ring" cx="74.0" cy="58.0" r="29" fill="none" stroke="#9B8012" stroke-width="1.2"
+          stroke-dasharray="5 6" stroke-opacity=".75"/>
+  <g class="icon" transform="translate(52.00 36.00) scale(1.83333)">
+    <g transform="translate(-0.0 -0.0)"><path fill="#9B8012" d="M12.025 1.13c-5.77 0-10.449 4.647-10.449 10.378 0 1.112.178 2.181.503 3.185.064-.222.203-.444.416-.577a.96.96 0 0 1 .524-.15c.293 0 .584.124.84.284.278.173.48.408.71.694.226.282.458.611.684.951v-.014c.017-.324.106-.622.264-.874s.403-.487.762-.543c.3-.047.596.06.787.203s.31.313.4.467c.15.257.212.468.233.542.01.026.653 1.552 1.657 2.54.616.605 1.01 1.223 1.082 1.912.055.537-.096 1.059-.38 1.572.637.121 1.294.187 1.967.187.657 0 1.298-.063 1.921-.178-.287-.517-.44-1.041-.384-1.581.07-.69.465-1.307 1.081-1.913 1.004-.987 1.647-2.513 1.657-2.539.021-.074.083-.285.233-.542.09-.154.208-.323.4-.467a1.08 1.08 0 0 1 .787-.203c.359.056.604.29.762.543s.247.55.265.874v.015c.225-.34.457-.67.683-.952.23-.286.432-.52.71-.694.257-.16.547-.284.84-.285a.97.97 0 0 1 .524.151c.228.143.373.388.43.625l.006.04a10.3 10.3 0 0 0 .534-3.273c0-5.731-4.678-10.378-10.449-10.378M8.327 6.583a1.5 1.5 0 0 1 .713.174 1.487 1.487 0 0 1 .617 2.013c-.183.343-.762-.214-1.102-.094-.38.134-.532.914-.917.71a1.487 1.487 0 0 1 .69-2.803m7.486 0a1.487 1.487 0 0 1 .689 2.803c-.385.204-.536-.576-.916-.71-.34-.12-.92.437-1.103.094a1.487 1.487 0 0 1 .617-2.013 1.5 1.5 0 0 1 .713-.174m-10.68 1.55a.96.96 0 1 1 0 1.921.96.96 0 0 1 0-1.92m13.838 0a.96.96 0 1 1 0 1.92.96.96 0 0 1 0-1.92M8.489 11.458c.588.01 1.965 1.157 3.572 1.164 1.607-.007 2.984-1.155 3.572-1.164.196-.003.305.12.305.454 0 .886-.424 2.328-1.563 3.202-.22-.756-1.396-1.366-1.63-1.32q-.011.001-.02.006l-.044.026-.01.008-.03.024q-.018.017-.035.036l-.032.04a1 1 0 0 0-.058.09l-.014.025q-.049.088-.11.19a1 1 0 0 1-.083.116 1.2 1.2 0 0 1-.173.18q-.035.029-.075.058a1.3 1.3 0 0 1-.251-.243 1 1 0 0 1-.076-.107c-.124-.193-.177-.363-.337-.444-.034-.016-.104-.008-.2.022q-.094.03-.216.087-.06.028-.125.063l-.13.074q-.067.04-.136.086a3 3 0 0 0-.135.096 3 3 0 0 0-.26.219 2 2 0 0 0-.12.121 2 2 0 0 0-.106.128l-.002.002a2 2 0 0 0-.09.132l-.001.001a1.2 1.2 0 0 0-.105.212q-.013.036-.024.073c-1.139-.875-1.563-2.317-1.563-3.203 0-.334.109-.457.305-.454m.836 10.354c.824-1.19.766-2.082-.365-3.194-1.13-1.112-1.789-2.738-1.789-2.738s-.246-.945-.806-.858-.97 1.499.202 2.362c1.173.864-.233 1.45-.685.64-.45-.812-1.683-2.896-2.322-3.295s-1.089-.175-.938.647 2.822 2.813 2.562 3.244-1.176-.506-1.176-.506-2.866-2.567-3.49-1.898.473 1.23 2.037 2.16c1.564.932 1.686 1.178 1.464 1.53s-3.675-2.511-4-1.297c-.323 1.214 3.524 1.567 3.287 2.405-.238.839-2.71-1.587-3.216-.642-.506.946 3.49 2.056 3.522 2.064 1.29.33 4.568 1.028 5.713-.624m5.349 0c-.824-1.19-.766-2.082.365-3.194 1.13-1.112 1.789-2.738 1.789-2.738s.246-.945.806-.858.97 1.499-.202 2.362c-1.173.864.233 1.45.685.64.451-.812 1.683-2.896 2.322-3.295s1.089-.175.938.647-2.822 2.813-2.562 3.244 1.176-.506 1.176-.506 2.866-2.567 3.49-1.898-.473 1.23-2.037 2.16c-1.564.932-1.686 1.178-1.464 1.53s3.675-2.511 4-1.297c.323 1.214-3.524 1.567-3.287 2.405.238.839 2.71-1.587 3.216-.642.506.946-3.49 2.056-3.522 2.064-1.29.33-4.568 1.028-5.713-.624"/></g>
+  </g>
+  <text class="lbl" x="74.0" y="98" font-size="11" fill="#3D4B63" text-anchor="middle"
+        letter-spacing=".7" font-weight="600">HUGGING FACE</text>
+  <text class="hint" x="74.0" y="114" font-size="7" fill="#9B8012" text-anchor="middle"
+        letter-spacing="1.6">OPEN DOCS &#8599;</text>
+  <path class="sheen" d="M6 27 L20 12 L34 12 L20 27 Z" fill="url(#sh)"/>
+  <circle class="tick" cx="18" cy="22" r="1.7" fill="#9B8012" style="animation-delay:-0.39s"/>
+</g></g></g>
+</svg>

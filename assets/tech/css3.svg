@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 132" width="148" height="132"
+     role="img" aria-label="CSS3">
+<title>CSS3</title>
+<style>
+  text { font-family: 'JetBrains Mono','Fira Code','SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace; }
+  .in { animation: rise .75s cubic-bezier(.2,.85,.25,1) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px) scale(.94) }
+                    to   { opacity: 1; transform: none } }
+  .fl { animation: float 7.5s ease-in-out infinite; }
+  @keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-2.6px) } }
+  .tile { transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 74px 69px; }
+  .tile:hover { transform: translateY(-6px) scale(1.035); }
+  .card { stroke: #D8E4F4; stroke-width: 1.4; transition: stroke .32s ease; }
+  .tile:hover .card { stroke: #0E7490; stroke-width: 1.8; }
+  .bar { transform: scaleX(.3); transform-origin: 6px 13.8px;
+          transition: transform .5s cubic-bezier(.2,.85,.25,1); }
+  .tile:hover .bar { transform: scaleX(1); }
+  .glow { opacity: 0; transition: opacity .35s ease; }
+  .tile:hover .glow { opacity: .5; }
+  .ring { opacity: 0; transition: opacity .35s ease; transform-origin: 74px 58px;
+           animation: spin 14s linear infinite; animation-play-state: paused; }
+  .tile:hover .ring { opacity: .95; animation-play-state: running; }
+  .icon { transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 74px 58px; }
+  .tile:hover .icon { transform: scale(1.12); }
+  .lbl { transition: fill .32s ease; }
+  .tile:hover .lbl { fill: #0E7490; }
+  .hint { opacity: 0; transition: opacity .35s ease; }
+  .tile:hover .hint { opacity: 1; }
+  .sheen { opacity: 0; }
+  .tile:hover .sheen { animation: sheen .95s linear infinite; }
+  @keyframes sheen { 0% { transform: translateX(-70px) } 100% { transform: translateX(150px) } }
+  .tick { animation: pulse 2.6s ease-in-out infinite; }
+</style>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F8FE"/></linearGradient>
+  <radialGradient id="gl" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#1572B6" stop-opacity=".38"/>
+    <stop offset="1" stop-color="#1572B6" stop-opacity="0"/></radialGradient>
+  <linearGradient id="sh" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".9"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+</defs>
+<g class="in" transform="translate(0 0)" style="animation-delay:0.45s">
+<g class="fl" transform="translate(0 0)" style="animation-delay:-0.85s">
+<g class="tile">
+  <rect class="card" x="6" y="12" width="136" height="114" rx="15" fill="url(#bg)"/>
+  <rect class="bar" x="6" y="12" width="136" height="3.6" rx="1.8" fill="#1572B6"/>
+  <circle class="glow" cx="74.0" cy="58.0" r="40" fill="url(#gl)"/>
+  <circle class="ring" cx="74.0" cy="58.0" r="29" fill="none" stroke="#1572B6" stroke-width="1.2"
+          stroke-dasharray="5 6" stroke-opacity=".75"/>
+  <g class="icon" transform="translate(52.00 36.00) scale(1.83333)">
+    <g transform="translate(-0.0 -0.0)"><path fill="#1572B6" d="M0 0v20.16A3.84 3.84 0 0 0 3.84 24h16.32A3.84 3.84 0 0 0 24 20.16V3.84A3.84 3.84 0 0 0 20.16 0Zm14.256 13.08c1.56 0 2.28 1.08 2.304 2.64h-1.608c.024-.288-.048-.6-.144-.84-.096-.192-.288-.264-.552-.264-.456 0-.696.264-.696.84-.024.576.288.888.768 1.08.72.288 1.608.744 1.92 1.296q.432.648.432 1.656c0 1.608-.912 2.592-2.496 2.592-1.656 0-2.4-1.032-2.424-2.688h1.68c0 .792.264 1.176.792 1.176.264 0 .456-.072.552-.24.192-.312.24-1.176-.048-1.512-.312-.408-.912-.6-1.32-.816q-.828-.396-1.224-.936c-.24-.36-.36-.888-.36-1.536 0-1.44.936-2.472 2.424-2.448m5.4 0c1.584 0 2.304 1.08 2.328 2.64h-1.608c0-.288-.048-.6-.168-.84-.096-.192-.264-.264-.528-.264-.48 0-.72.264-.72.84s.288.888.792 1.08c.696.288 1.608.744 1.92 1.296.264.432.408.984.408 1.656.024 1.608-.888 2.592-2.472 2.592-1.68 0-2.424-1.056-2.448-2.688h1.68c0 .744.264 1.176.792 1.176.264 0 .456-.072.552-.24.216-.312.264-1.176-.048-1.512-.288-.408-.888-.6-1.32-.816-.552-.264-.96-.576-1.2-.936s-.36-.888-.36-1.536c-.024-1.44.912-2.472 2.4-2.448m-11.031.018c.711-.006 1.419.198 1.839.63.432.432.672 1.128.648 1.992H9.336c.024-.456-.096-.792-.432-.96-.312-.144-.768-.048-.888.24-.12.264-.192.576-.168.864v3.504c0 .744.264 1.128.768 1.128a.65.65 0 0 0 .552-.264c.168-.24.192-.552.168-.84h1.776c.096 1.632-.984 2.712-2.568 2.688-1.536 0-2.496-.864-2.472-2.472v-4.032c0-.816.24-1.44.696-1.848.432-.408 1.146-.624 1.857-.63"/></g>
+  </g>
+  <text class="lbl" x="74.0" y="98" font-size="11" fill="#3D4B63" text-anchor="middle"
+        letter-spacing=".7" font-weight="600">CSS3</text>
+  <text class="hint" x="74.0" y="114" font-size="7" fill="#1572B6" text-anchor="middle"
+        letter-spacing="1.6">OPEN DOCS &#8599;</text>
+  <path class="sheen" d="M6 27 L20 12 L34 12 L20 27 Z" fill="url(#sh)"/>
+  <circle class="tick" cx="18" cy="22" r="1.7" fill="#1572B6" style="animation-delay:-0.45s"/>
+</g></g></g>
+</svg>

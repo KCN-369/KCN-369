@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 132" width="148" height="132"
+     role="img" aria-label="TYPESCRIPT">
+<title>TYPESCRIPT</title>
+<style>
+  text { font-family: 'JetBrains Mono','Fira Code','SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace; }
+  .in { animation: rise .75s cubic-bezier(.2,.85,.25,1) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px) scale(.94) }
+                    to   { opacity: 1; transform: none } }
+  .fl { animation: float 7.5s ease-in-out infinite; }
+  @keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-2.6px) } }
+  .tile { transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 74px 69px; }
+  .tile:hover { transform: translateY(-6px) scale(1.035); }
+  .card { stroke: #D8E4F4; stroke-width: 1.4; transition: stroke .32s ease; }
+  .tile:hover .card { stroke: #0E7490; stroke-width: 1.8; }
+  .bar { transform: scaleX(.3); transform-origin: 6px 13.8px;
+          transition: transform .5s cubic-bezier(.2,.85,.25,1); }
+  .tile:hover .bar { transform: scaleX(1); }
+  .glow { opacity: 0; transition: opacity .35s ease; }
+  .tile:hover .glow { opacity: .5; }
+  .ring { opacity: 0; transition: opacity .35s ease; transform-origin: 74px 58px;
+           animation: spin 14s linear infinite; animation-play-state: paused; }
+  .tile:hover .ring { opacity: .95; animation-play-state: running; }
+  .icon { transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 74px 58px; }
+  .tile:hover .icon { transform: scale(1.12); }
+  .lbl { transition: fill .32s ease; }
+  .tile:hover .lbl { fill: #0E7490; }
+  .hint { opacity: 0; transition: opacity .35s ease; }
+  .tile:hover .hint { opacity: 1; }
+  .sheen { opacity: 0; }
+  .tile:hover .sheen { animation: sheen .95s linear infinite; }
+  @keyframes sheen { 0% { transform: translateX(-70px) } 100% { transform: translateX(150px) } }
+  .tick { animation: pulse 2.6s ease-in-out infinite; }
+</style>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F8FE"/></linearGradient>
+  <radialGradient id="gl" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#3178C6" stop-opacity=".38"/>
+    <stop offset="1" stop-color="#3178C6" stop-opacity="0"/></radialGradient>
+  <linearGradient id="sh" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".9"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+</defs>
+<g class="in" transform="translate(0 0)" style="animation-delay:0.27s">
+<g class="fl" transform="translate(0 0)" style="animation-delay:-0.51s">
+<g class="tile">
+  <rect class="card" x="6" y="12" width="136" height="114" rx="15" fill="url(#bg)"/>
+  <rect class="bar" x="6" y="12" width="136" height="3.6" rx="1.8" fill="#3178C6"/>
+  <circle class="glow" cx="74.0" cy="58.0" r="40" fill="url(#gl)"/>
+  <circle class="ring" cx="74.0" cy="58.0" r="29" fill="none" stroke="#3178C6" stroke-width="1.2"
+          stroke-dasharray="5 6" stroke-opacity=".75"/>
+  <g class="icon" transform="translate(52.00 36.00) scale(1.83333)">
+    <g transform="translate(-0.0 -0.0)"><path fill="#3178C6" d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/></g>
+  </g>
+  <text class="lbl" x="74.0" y="98" font-size="11" fill="#3D4B63" text-anchor="middle"
+        letter-spacing=".7" font-weight="600">TYPESCRIPT</text>
+  <text class="hint" x="74.0" y="114" font-size="7" fill="#3178C6" text-anchor="middle"
+        letter-spacing="1.6">OPEN DOCS &#8599;</text>
+  <path class="sheen" d="M6 27 L20 12 L34 12 L20 27 Z" fill="url(#sh)"/>
+  <circle class="tick" cx="18" cy="22" r="1.7" fill="#3178C6" style="animation-delay:-0.27s"/>
+</g></g></g>
+</svg>

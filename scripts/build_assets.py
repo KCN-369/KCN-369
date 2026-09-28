@@ -21,6 +21,7 @@ Standard library only.  Usage:  python3 scripts/build_assets.py
 """
 from __future__ import annotations
 
+import json
 import math
 import os
 import random
@@ -765,6 +766,163 @@ def write_avatar_png(size: int = 512, path: str | None = None) -> str:
 
 
 # ───────────────────────────────── MAIN ───────────────────────────────────
+# ─────────────────────── TECH-STACK TILES (one per tech) ───────────────────
+# One small self-contained animated SVG per technology.  Each tile is a real
+# <img> in README.md, so it can be wrapped in an <a href="official docs"> --
+# links embedded *inside* an SVG are dead when GitHub serves it through camo,
+# but a whole tile inside an <a> is a normal clickable image.
+TECH_DIR = os.path.join(OUT, "tech")
+
+# category -> [(icon_data key, label), ...]
+TECH_GROUPS = [
+    ("LANGUAGES", [("python", "PYTHON"), ("c", "C"), ("javascript", "JAVASCRIPT"),
+                   ("typescript", "TYPESCRIPT"), ("html5", "HTML5"), ("css3", "CSS3")]),
+    ("MACHINE LEARNING", [("pytorch", "PYTORCH"), ("tensorflow", "TENSORFLOW"),
+                          ("scikit-learn", "SCIKIT-LEARN"), ("opencv", "OPENCV"),
+                          ("hugging-face", "HUGGING FACE")]),
+    ("DATA / SCIENTIFIC", [("numpy", "NUMPY"), ("pandas", "PANDAS"),
+                           ("matplotlib", "MATPLOTLIB"), ("scipy", "SCIPY"),
+                           ("jupyter", "JUPYTER"), ("anaconda", "ANACONDA")]),
+    ("QUANTUM / WRITING", [("qiskit", "QISKIT"), ("latex", "LATEX"), ("arxiv", "ARXIV")]),
+    ("TOOLS / ENVIRONMENT", [("git", "GIT"), ("linux", "LINUX"), ("bash", "BASH"),
+                             ("docker", "DOCKER"), ("vs-code", "VS CODE")]),
+    ("WEB / VERSION HOST", [("react", "REACT"), ("next-js", "NEXT.JS"), ("github", "GITHUB")]),
+]
+
+
+def load_icons() -> dict:
+    with open(os.path.join(ROOT, "scripts", "icon_data.json"), encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def _srgb(c: float) -> float:
+    return c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4
+
+
+def _lum(hexc: str) -> float:
+    r, g, b = (int(hexc[i:i + 2], 16) / 255 for i in (1, 3, 5))
+    return 0.2126 * _srgb(r) + 0.7152 * _srgb(g) + 0.0722 * _srgb(b)
+
+
+def readable(hexc: str, min_ratio: float = 3.6, target: str = "#FFFFFF") -> str:
+    """Darken a brand colour until it reads well on a light tile."""
+    out = []
+    for i in range(1, len(hexc) - 1, 2):
+        out.append(int(hexc[i:i + 2], 16))
+    bg = [_lum(target)] * 3
+    while True:
+        fg = [_lum("#%02X%02X%02X" % tuple(out))]
+        ratio = (max(fg[0], bg[0]) + .05) / (min(fg[0], bg[0]) + .05)
+        if ratio >= min_ratio or all(v == 0 for v in out):
+            return "#%02X%02X%02X" % tuple(out)
+        out = [max(0, int(round(v * .92))) for v in out]
+
+
+TILE_CSS = """
+  text {{ font-family: {FONT}; }}
+  .in {{ animation: rise .75s cubic-bezier(.2,.85,.25,1) both; }}
+  @keyframes rise {{ from {{ opacity: 0; transform: translateY(16px) scale(.94) }}
+                    to   {{ opacity: 1; transform: none }} }}
+  .fl {{ animation: float 7.5s ease-in-out infinite; }}
+  @keyframes float {{ 0%,100% {{ transform: translateY(0) }} 50% {{ transform: translateY(-2.6px) }} }}
+  .tile {{ transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 74px 69px; }}
+  .tile:hover {{ transform: translateY(-6px) scale(1.035); }}
+  .card {{ stroke: {LINE}; stroke-width: 1.4; transition: stroke .32s ease; }}
+  .tile:hover .card {{ stroke: {C}; stroke-width: 1.8; }}
+  .bar {{ transform: scaleX(.3); transform-origin: 6px 13.8px;
+          transition: transform .5s cubic-bezier(.2,.85,.25,1); }}
+  .tile:hover .bar {{ transform: scaleX(1); }}
+  .glow {{ opacity: 0; transition: opacity .35s ease; }}
+  .tile:hover .glow {{ opacity: .5; }}
+  .ring {{ opacity: 0; transition: opacity .35s ease; transform-origin: 74px 58px;
+           animation: spin 14s linear infinite; animation-play-state: paused; }}
+  .tile:hover .ring {{ opacity: .95; animation-play-state: running; }}
+  .icon {{ transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 74px 58px; }}
+  .tile:hover .icon {{ transform: scale(1.12); }}
+  .lbl {{ transition: fill .32s ease; }}
+  .tile:hover .lbl {{ fill: {C}; }}
+  .hint {{ opacity: 0; transition: opacity .35s ease; }}
+  .tile:hover .hint {{ opacity: 1; }}
+  .sheen {{ opacity: 0; }}
+  .tile:hover .sheen {{ animation: sheen .95s linear infinite; }}
+  @keyframes sheen {{ 0% {{ transform: translateX(-70px) }} 100% {{ transform: translateX(150px) }} }}
+  .tick {{ animation: pulse 2.6s ease-in-out infinite; }}
+""".format(FONT=FONT, LINE=LINE, C=CY)
+
+
+def tech_tile(key: str, label: str, icon: dict, delay: float) -> str:
+    """148x132 tile: rounded light card, brand icon, hover-reveal ring + docs hint."""
+    c = readable(icon["color"])
+    vb = icon["vb"]
+    try:
+        _, _, vw, vh = [float(v) for v in vb.split()]
+    except ValueError:
+        vw, vh = 24.0, 24.0
+    box, cx, cy = 44.0, 74.0, 58.0
+    k = box / max(vw, vh)
+    iw, ih = vw * k, vh * k
+    inner = icon["inner"]
+    if "fill=" not in inner:
+        inner = inner.replace("<path ", '<path fill="%s" ' % c, 1)
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 132" width="148" height="132"
+     role="img" aria-label="{label}">
+<title>{label}</title>
+<style>{TILE_CSS}</style>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F8FE"/></linearGradient>
+  <radialGradient id="gl" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="{c}" stop-opacity=".38"/>
+    <stop offset="1" stop-color="{c}" stop-opacity="0"/></radialGradient>
+  <linearGradient id="sh" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".9"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+</defs>
+<g class="in" transform="translate(0 0)" style="animation-delay:{delay:.2f}s">
+<g class="fl" transform="translate(0 0)" style="animation-delay:-{delay * 1.9:.2f}s">
+<g class="tile">
+  <rect class="card" x="6" y="12" width="136" height="114" rx="15" fill="url(#bg)"/>
+  <rect class="bar" x="6" y="12" width="136" height="3.6" rx="1.8" fill="{c}"/>
+  <circle class="glow" cx="{cx}" cy="{cy}" r="40" fill="url(#gl)"/>
+  <circle class="ring" cx="{cx}" cy="{cy}" r="29" fill="none" stroke="{c}" stroke-width="1.2"
+          stroke-dasharray="5 6" stroke-opacity=".75"/>
+  <g class="icon" transform="translate({cx - iw / 2:.2f} {cy - ih / 2:.2f}) scale({k:.5f})">
+    <g transform="translate({-float(vb.split()[0]):.1f} {-float(vb.split()[1]):.1f})">{inner}</g>
+  </g>
+  <text class="lbl" x="{cx}" y="98" font-size="11" fill="{INK2}" text-anchor="middle"
+        letter-spacing=".7" font-weight="600">{label}</text>
+  <text class="hint" x="{cx}" y="114" font-size="7" fill="{c}" text-anchor="middle"
+        letter-spacing="1.6">OPEN DOCS &#8599;</text>
+  <path class="sheen" d="M6 27 L20 12 L34 12 L20 27 Z" fill="url(#sh)"/>
+  <circle class="tick" cx="18" cy="22" r="1.7" fill="{c}" style="animation-delay:-{delay:.2f}s"/>
+</g></g></g>
+</svg>
+"""
+
+
+def techstack() -> int:
+    icons = load_icons()
+    os.makedirs(TECH_DIR, exist_ok=True)
+    manifest = []
+    n = 0
+    for cat, items in TECH_GROUPS:
+        for key, label in items:
+            icon = icons[key]
+            svg = tech_tile(key, label, icon, delay=(n % 7) * .09 + (n // 7) * .12)
+            with open(os.path.join(TECH_DIR, key + ".svg"), "w", encoding="utf-8") as fh:
+                fh.write(svg)
+            manifest.append({"key": key, "label": label, "category": cat,
+                             "docs": icon["docs"], "color": icon["color"],
+                             "file": "assets/tech/%s.svg" % key})
+            n += 1
+    with open(os.path.join(TECH_DIR, "index.json"), "w", encoding="utf-8") as fh:
+        json.dump(manifest, fh, indent=1)
+    print(f"wrote assets/tech/*.svg ({n} tiles, "
+          f"{sum(os.path.getsize(os.path.join(TECH_DIR, k + '.svg')) for k in icons) / 1024:.1f} KB)")
+    return n
+
+
 BUILDERS = {
     "hero.svg": hero,
     "avatar.svg": avatar_svg,
@@ -785,6 +943,7 @@ def main() -> int:
         with open(os.path.join(OUT, name), "w", encoding="utf-8") as fh:
             fh.write(svg)
         print(f"wrote assets/{name} ({len(svg) / 1024:.1f} KB)")
+    techstack()
     p = write_avatar_png()
     print(f"wrote {os.path.relpath(p, ROOT)} ({os.path.getsize(p) / 1024:.1f} KB)")
     return 0
