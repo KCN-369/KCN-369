@@ -41,7 +41,7 @@ for gi, (cat, items) in enumerate(GROUPS):
     for key, human in items:
         docs = icons[key]["docs"]
         out.append('<a href="%s" title="%s — official documentation">'
-                   '<img src="./assets/tech/%s.svg" width="148" height="132" alt="%s"/></a>'
+                   '<img src="./assets/tech/%s.svg" width="132" height="132" alt="%s"/></a>'
                    % (docs, human, key, human))
     out += ['']
 out += ['</div>']

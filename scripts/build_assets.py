@@ -825,7 +825,7 @@ TILE_CSS = """
                     to   {{ opacity: 1; transform: none }} }}
   .fl {{ animation: float 7.5s ease-in-out infinite; }}
   @keyframes float {{ 0%,100% {{ transform: translateY(0) }} 50% {{ transform: translateY(-2.6px) }} }}
-  .tile {{ transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 74px 69px; }}
+  .tile {{ transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 66px 69px; }}
   .tile:hover {{ transform: translateY(-6px) scale(1.035); }}
   .card {{ stroke: {LINE}; stroke-width: 1.4; transition: stroke .32s ease; }}
   .tile:hover .card {{ stroke: {C}; stroke-width: 1.8; }}
@@ -834,10 +834,10 @@ TILE_CSS = """
   .tile:hover .bar {{ transform: scaleX(1); }}
   .glow {{ opacity: 0; transition: opacity .35s ease; }}
   .tile:hover .glow {{ opacity: .5; }}
-  .ring {{ opacity: 0; transition: opacity .35s ease; transform-origin: 74px 58px;
+  .ring {{ opacity: 0; transition: opacity .35s ease; transform-origin: 66px 58px;
            animation: spin 14s linear infinite; animation-play-state: paused; }}
   .tile:hover .ring {{ opacity: .95; animation-play-state: running; }}
-  .icon {{ transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 74px 58px; }}
+  .icon {{ transition: transform .38s cubic-bezier(.2,.85,.25,1); transform-origin: 66px 58px; }}
   .tile:hover .icon {{ transform: scale(1.12); }}
   .lbl {{ transition: fill .32s ease; }}
   .tile:hover .lbl {{ fill: {C}; }}
@@ -858,13 +858,13 @@ def tech_tile(key: str, label: str, icon: dict, delay: float) -> str:
         _, _, vw, vh = [float(v) for v in vb.split()]
     except ValueError:
         vw, vh = 24.0, 24.0
-    box, cx, cy = 44.0, 74.0, 58.0
+    box, cx, cy = 44.0, 66.0, 58.0
     k = box / max(vw, vh)
     iw, ih = vw * k, vh * k
     inner = icon["inner"]
     if "fill=" not in inner:
         inner = inner.replace("<path ", '<path fill="%s" ' % c, 1)
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 132" width="148" height="132"
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 132" width="132" height="132"
      role="img" aria-label="{label}">
 <title>{label}</title>
 <style>{TILE_CSS}</style>
@@ -882,8 +882,8 @@ def tech_tile(key: str, label: str, icon: dict, delay: float) -> str:
 <g class="in" transform="translate(0 0)" style="animation-delay:{delay:.2f}s">
 <g class="fl" transform="translate(0 0)" style="animation-delay:-{delay * 1.9:.2f}s">
 <g class="tile">
-  <rect class="card" x="6" y="12" width="136" height="114" rx="15" fill="url(#bg)"/>
-  <rect class="bar" x="6" y="12" width="136" height="3.6" rx="1.8" fill="{c}"/>
+  <rect class="card" x="6" y="12" width="120" height="114" rx="15" fill="url(#bg)"/>
+  <rect class="bar" x="6" y="12" width="120" height="3.6" rx="1.8" fill="{c}"/>
   <circle class="glow" cx="{cx}" cy="{cy}" r="40" fill="url(#gl)"/>
   <circle class="ring" cx="{cx}" cy="{cy}" r="29" fill="none" stroke="{c}" stroke-width="1.2"
           stroke-dasharray="5 6" stroke-opacity=".75"/>

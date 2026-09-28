@@ -60,54 +60,54 @@
 
 <sub><code>LANGUAGES</code></sub><br/><br/>
 
-<a href="https://docs.python.org/3/" title="Python — official documentation"><img src="./assets/tech/python.svg" width="148" height="132" alt="Python"/></a>
-<a href="https://en.cppreference.com/w/" title="C — official documentation"><img src="./assets/tech/c.svg" width="148" height="132" alt="C"/></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript — official documentation"><img src="./assets/tech/javascript.svg" width="148" height="132" alt="JavaScript"/></a>
-<a href="https://www.typescriptlang.org/docs/" title="TypeScript — official documentation"><img src="./assets/tech/typescript.svg" width="148" height="132" alt="TypeScript"/></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML — official documentation"><img src="./assets/tech/html5.svg" width="148" height="132" alt="HTML"/></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" title="CSS — official documentation"><img src="./assets/tech/css3.svg" width="148" height="132" alt="CSS"/></a>
+<a href="https://docs.python.org/3/" title="Python — official documentation"><img src="./assets/tech/python.svg" width="132" height="132" alt="Python"/></a>
+<a href="https://en.cppreference.com/w/" title="C — official documentation"><img src="./assets/tech/c.svg" width="132" height="132" alt="C"/></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript — official documentation"><img src="./assets/tech/javascript.svg" width="132" height="132" alt="JavaScript"/></a>
+<a href="https://www.typescriptlang.org/docs/" title="TypeScript — official documentation"><img src="./assets/tech/typescript.svg" width="132" height="132" alt="TypeScript"/></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML — official documentation"><img src="./assets/tech/html5.svg" width="132" height="132" alt="HTML"/></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" title="CSS — official documentation"><img src="./assets/tech/css3.svg" width="132" height="132" alt="CSS"/></a>
 
 <br/><br/>
 <sub><code>MACHINE LEARNING</code></sub><br/><br/>
 
-<a href="https://pytorch.org/docs/stable/" title="PyTorch — official documentation"><img src="./assets/tech/pytorch.svg" width="148" height="132" alt="PyTorch"/></a>
-<a href="https://www.tensorflow.org/api_docs" title="TensorFlow — official documentation"><img src="./assets/tech/tensorflow.svg" width="148" height="132" alt="TensorFlow"/></a>
-<a href="https://scikit-learn.org/stable/" title="scikit-learn — official documentation"><img src="./assets/tech/scikit-learn.svg" width="148" height="132" alt="scikit-learn"/></a>
-<a href="https://docs.opencv.org/4.x/" title="OpenCV — official documentation"><img src="./assets/tech/opencv.svg" width="148" height="132" alt="OpenCV"/></a>
-<a href="https://huggingface.co/docs" title="Hugging Face — official documentation"><img src="./assets/tech/hugging-face.svg" width="148" height="132" alt="Hugging Face"/></a>
+<a href="https://pytorch.org/docs/stable/" title="PyTorch — official documentation"><img src="./assets/tech/pytorch.svg" width="132" height="132" alt="PyTorch"/></a>
+<a href="https://www.tensorflow.org/api_docs" title="TensorFlow — official documentation"><img src="./assets/tech/tensorflow.svg" width="132" height="132" alt="TensorFlow"/></a>
+<a href="https://scikit-learn.org/stable/" title="scikit-learn — official documentation"><img src="./assets/tech/scikit-learn.svg" width="132" height="132" alt="scikit-learn"/></a>
+<a href="https://docs.opencv.org/4.x/" title="OpenCV — official documentation"><img src="./assets/tech/opencv.svg" width="132" height="132" alt="OpenCV"/></a>
+<a href="https://huggingface.co/docs" title="Hugging Face — official documentation"><img src="./assets/tech/hugging-face.svg" width="132" height="132" alt="Hugging Face"/></a>
 
 <br/><br/>
 <sub><code>DATA · SCIENTIFIC COMPUTING</code></sub><br/><br/>
 
-<a href="https://numpy.org/doc/stable/" title="NumPy — official documentation"><img src="./assets/tech/numpy.svg" width="148" height="132" alt="NumPy"/></a>
-<a href="https://pandas.pydata.org/docs/" title="pandas — official documentation"><img src="./assets/tech/pandas.svg" width="148" height="132" alt="pandas"/></a>
-<a href="https://matplotlib.org/stable/" title="Matplotlib — official documentation"><img src="./assets/tech/matplotlib.svg" width="148" height="132" alt="Matplotlib"/></a>
-<a href="https://docs.scipy.org/doc/scipy/" title="SciPy — official documentation"><img src="./assets/tech/scipy.svg" width="148" height="132" alt="SciPy"/></a>
-<a href="https://docs.jupyter.org/" title="Jupyter — official documentation"><img src="./assets/tech/jupyter.svg" width="148" height="132" alt="Jupyter"/></a>
-<a href="https://docs.anaconda.com/" title="Anaconda — official documentation"><img src="./assets/tech/anaconda.svg" width="148" height="132" alt="Anaconda"/></a>
+<a href="https://numpy.org/doc/stable/" title="NumPy — official documentation"><img src="./assets/tech/numpy.svg" width="132" height="132" alt="NumPy"/></a>
+<a href="https://pandas.pydata.org/docs/" title="pandas — official documentation"><img src="./assets/tech/pandas.svg" width="132" height="132" alt="pandas"/></a>
+<a href="https://matplotlib.org/stable/" title="Matplotlib — official documentation"><img src="./assets/tech/matplotlib.svg" width="132" height="132" alt="Matplotlib"/></a>
+<a href="https://docs.scipy.org/doc/scipy/" title="SciPy — official documentation"><img src="./assets/tech/scipy.svg" width="132" height="132" alt="SciPy"/></a>
+<a href="https://docs.jupyter.org/" title="Jupyter — official documentation"><img src="./assets/tech/jupyter.svg" width="132" height="132" alt="Jupyter"/></a>
+<a href="https://docs.anaconda.com/" title="Anaconda — official documentation"><img src="./assets/tech/anaconda.svg" width="132" height="132" alt="Anaconda"/></a>
 
 <br/><br/>
 <sub><code>QUANTUM · RESEARCH</code></sub><br/><br/>
 
-<a href="https://docs.quantum.ibm.com/" title="Qiskit — official documentation"><img src="./assets/tech/qiskit.svg" width="148" height="132" alt="Qiskit"/></a>
-<a href="https://www.latex-project.org/help/documentation/" title="LaTeX — official documentation"><img src="./assets/tech/latex.svg" width="148" height="132" alt="LaTeX"/></a>
-<a href="https://info.arxiv.org/help/index.html" title="arXiv — official documentation"><img src="./assets/tech/arxiv.svg" width="148" height="132" alt="arXiv"/></a>
+<a href="https://docs.quantum.ibm.com/" title="Qiskit — official documentation"><img src="./assets/tech/qiskit.svg" width="132" height="132" alt="Qiskit"/></a>
+<a href="https://www.latex-project.org/help/documentation/" title="LaTeX — official documentation"><img src="./assets/tech/latex.svg" width="132" height="132" alt="LaTeX"/></a>
+<a href="https://info.arxiv.org/help/index.html" title="arXiv — official documentation"><img src="./assets/tech/arxiv.svg" width="132" height="132" alt="arXiv"/></a>
 
 <br/><br/>
 <sub><code>TOOLS · ENVIRONMENT</code></sub><br/><br/>
 
-<a href="https://git-scm.com/doc" title="Git — official documentation"><img src="./assets/tech/git.svg" width="148" height="132" alt="Git"/></a>
-<a href="https://www.kernel.org/doc/html/latest/" title="Linux — official documentation"><img src="./assets/tech/linux.svg" width="148" height="132" alt="Linux"/></a>
-<a href="https://www.gnu.org/software/bash/manual/bash.html" title="Bash — official documentation"><img src="./assets/tech/bash.svg" width="148" height="132" alt="Bash"/></a>
-<a href="https://docs.docker.com/" title="Docker — official documentation"><img src="./assets/tech/docker.svg" width="148" height="132" alt="Docker"/></a>
-<a href="https://code.visualstudio.com/docs" title="VS Code — official documentation"><img src="./assets/tech/vs-code.svg" width="148" height="132" alt="VS Code"/></a>
+<a href="https://git-scm.com/doc" title="Git — official documentation"><img src="./assets/tech/git.svg" width="132" height="132" alt="Git"/></a>
+<a href="https://www.kernel.org/doc/html/latest/" title="Linux — official documentation"><img src="./assets/tech/linux.svg" width="132" height="132" alt="Linux"/></a>
+<a href="https://www.gnu.org/software/bash/manual/bash.html" title="Bash — official documentation"><img src="./assets/tech/bash.svg" width="132" height="132" alt="Bash"/></a>
+<a href="https://docs.docker.com/" title="Docker — official documentation"><img src="./assets/tech/docker.svg" width="132" height="132" alt="Docker"/></a>
+<a href="https://code.visualstudio.com/docs" title="VS Code — official documentation"><img src="./assets/tech/vs-code.svg" width="132" height="132" alt="VS Code"/></a>
 
 <br/><br/>
 <sub><code>WEB · VERSION HOST</code></sub><br/><br/>
 
-<a href="https://react.dev/learn" title="React — official documentation"><img src="./assets/tech/react.svg" width="148" height="132" alt="React"/></a>
-<a href="https://nextjs.org/docs" title="Next.js — official documentation"><img src="./assets/tech/next-js.svg" width="148" height="132" alt="Next.js"/></a>
-<a href="https://docs.github.com/" title="GitHub — official documentation"><img src="./assets/tech/github.svg" width="148" height="132" alt="GitHub"/></a>
+<a href="https://react.dev/learn" title="React — official documentation"><img src="./assets/tech/react.svg" width="132" height="132" alt="React"/></a>
+<a href="https://nextjs.org/docs" title="Next.js — official documentation"><img src="./assets/tech/next-js.svg" width="132" height="132" alt="Next.js"/></a>
+<a href="https://docs.github.com/" title="GitHub — official documentation"><img src="./assets/tech/github.svg" width="132" height="132" alt="GitHub"/></a>
 
 </div>
 
