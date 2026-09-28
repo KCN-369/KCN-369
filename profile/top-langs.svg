@@ -36,7 +36,7 @@
 <g class="row" style="animation-delay:0.00s">
 <circle cx="34" cy="78.0" r="5" fill="#3572A5"/>
 <text x="48" y="82.0" font-size="12.5" fill="#0B1220" font-weight="600">Python</text>
-<text x="974" y="82.0" font-size="12" fill="#7C8CA6" text-anchor="end"><tspan fill="#0B1220" font-weight="700">100.0%</tspan> · 3.2kB</text>
+<text x="974" y="82.0" font-size="12" fill="#7C8CA6" text-anchor="end"><tspan fill="#0B1220" font-weight="700">100.0%</tspan> · 125kB</text>
 <rect x="48" y="91.0" width="800" height="8" rx="4" fill="#EDF3FB"/>
 <g class="bar" style="animation-delay:0.20s"><rect x="48" y="91.0" width="800.0" height="8" rx="4" fill="#3572A5"/></g>
 </g>
